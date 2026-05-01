@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSTOP Content Studio â Modelo Financiero Completo</title>
+<title>FSTOP Content Studio — Modelo Financiero Completo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -173,7 +173,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
     <a href="#calc">Calculadora</a>
     <a href="#costs">Costos</a>
     <a href="#pnl">P&L</a>
-    <a href="#invest">InversiÃ³n</a>
+    <a href="#invest">Inversión</a>
     <a href="#unit">Unit Economics</a>
     <a href="#cash">Cash Flow</a>
     <a href="#heat">Heatmap</a>
@@ -183,14 +183,14 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </nav>
 
-<!-- âââ 1. CALCULADORA âââ -->
+<!-- ═══ 1. CALCULADORA ═══ -->
 <section class="sec" id="calc">
-  <div class="eye rv">01 â Modelo Financiero Completo</div>
+  <div class="eye rv">01 — Modelo Financiero Completo</div>
   <h1 class="rv rv-1">La calculadora definitiva<br>de <span class="a">FSTOP Studio.</span></h1>
-  <p class="lead rv rv-2">Todas las variables reales de una agencia de contenido: equipo, estudio, SaaS, inversiÃ³n inicial, filmmaker, community manager. Mueve cualquier slider y todo se recalcula al instante.</p>
+  <p class="lead rv rv-2">Todas las variables reales de una agencia de contenido: equipo, estudio, SaaS, inversión inicial, filmmaker, community manager. Mueve cualquier slider y todo se recalcula al instante.</p>
 
   <div class="pt rv rv-3">
-    <button class="pb" onclick="setP('lean')">Lean (mÃ­nimo)</button>
+    <button class="pb" onclick="setP('lean')">Lean (mínimo)</button>
     <button class="pb act" onclick="setP('base')">Base (arranque)</button>
     <button class="pb" onclick="setP('grow')">Crecimiento</button>
     <button class="pb" onclick="setP('full')">Escala completa</button>
@@ -220,30 +220,30 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
           <input type="range" id="s-es" min="6000" max="25000" step="500" value="12000" oninput="R()"><div class="sm"><span>$6K</span><span>$12K</span><span>$18K</span><span>$25K</span></div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Capacidad editor (vids/mes)</span><span class="sv p" id="d-ec">65</span></div>
           <input type="range" id="s-ec" min="40" max="100" step="5" value="65" oninput="R()"><div class="sm"><span>40</span><span>60</span><span>80</span><span>100</span></div>
-          <div class="hint">Talking head sencillo: 60â70 realista</div></div>
+          <div class="hint">Talking head sencillo: 60–70 realista</div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Community Manager</span><span class="sv p" id="d-cm">$8,000</span></div>
           <input type="range" id="s-cm" min="0" max="18000" step="500" value="8000" oninput="R()"><div class="sm"><span>$0</span><span>$5K</span><span>$8K</span><span>$12K</span><span>$18K</span></div>
-          <div class="hint">PublicaciÃ³n, copys, programaciÃ³n</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">Filmmaker / dÃ­a</span><span class="sv p" id="d-fm">$5,500</span></div>
+          <div class="hint">Publicación, copys, programación</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Filmmaker / día</span><span class="sv p" id="d-fm">$5,500</span></div>
           <input type="range" id="s-fm" min="0" max="10000" step="500" value="5500" oninput="R()"><div class="sm"><span>$0</span><span>$3K</span><span>$5.5K</span><span>$8K</span><span>$10K</span></div>
-          <div class="hint">$0 = Creators graba. Graba 2 clientes/dÃ­a</div></div>
+          <div class="hint">$0 = Creators graba. Graba 2 clientes/día</div></div>
       </div>
       <!-- COL 3: INFRAESTRUCTURA -->
       <div>
         <div class="col-label" style="color:var(--cyn)">Infraestructura</div>
         <div class="sg"><div class="sh-r"><span class="sl">Renta estudio / mes</span><span class="sv p" id="d-st">$8,000</span></div>
           <input type="range" id="s-st" min="0" max="50000" step="500" value="8000" oninput="R()"><div class="sm"><span>$0</span><span>$10K</span><span>$20K</span><span>$35K</span><span>$50K</span></div>
-          <div class="hint" id="h-st">$0 = renta por dÃ­a</div></div>
+          <div class="hint" id="h-st">$0 = renta por día</div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Costos fijos SaaS</span><span class="sv p" id="d-sa">$3,500</span></div>
           <input type="range" id="s-sa" min="1000" max="10000" step="500" value="3500" oninput="R()"><div class="sm"><span>$1K</span><span>$3.5K</span><span>$6K</span><span>$10K</span></div>
           <div class="hint">ManyChat, hosting, dominio, Notion, Drive, etc.</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">InversiÃ³n landing page</span><span class="sv p" id="d-lp">$30,000</span></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Inversión landing page</span><span class="sv p" id="d-lp">$30,000</span></div>
           <input type="range" id="s-lp" min="5000" max="80000" step="5000" value="30000" oninput="R()"><div class="sm"><span>$5K</span><span>$20K</span><span>$40K</span><span>$60K</span><span>$80K</span></div>
-          <div class="hint">InversiÃ³n Ãºnica â se reparte entre crews</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">AdecuaciÃ³n de espacio</span><span class="sv p" id="d-sp">$20,000</span></div>
+          <div class="hint">Inversión única — se reparte entre crews</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Adecuación de espacio</span><span class="sv p" id="d-sp">$20,000</span></div>
           <input type="range" id="s-sp" min="0" max="60000" step="5000" value="20000" oninput="R()"><div class="sm"><span>$0</span><span>$15K</span><span>$30K</span><span>$45K</span><span>$60K</span></div>
-          <div class="hint">InversiÃ³n Ãºnica â equipo, iluminaciÃ³n, set</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">ComisiÃ³n pasarela (%)</span><span class="sv p" id="d-gw">3.5%</span></div>
+          <div class="hint">Inversión única — equipo, iluminación, set</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Comisión pasarela (%)</span><span class="sv p" id="d-gw">3.5%</span></div>
           <input type="range" id="s-gw" min="2" max="6" step="0.5" value="3.5" oninput="R()"><div class="sm"><span>2%</span><span>3.5%</span><span>5%</span><span>6%</span></div></div>
       </div>
     </div>
@@ -252,12 +252,12 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   <!-- RESULTS -->
   <div style="margin-top:20px">
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px" id="top-results">
-      <div class="rc hi"><div class="rl">Revenue</div><div class="rr" id="r-rev" style="color:var(--wh)">$160K</div><div class="rs" id="r-rev-s">8Ã$20K</div></div>
+      <div class="rc hi"><div class="rl">Revenue</div><div class="rr" id="r-rev" style="color:var(--wh)">$160K</div><div class="rs" id="r-rev-s">8×$20K</div></div>
       <div class="rc"><div class="rl">Costos fijos</div><div class="rr" id="r-fix" style="color:var(--red);font-size:22px">$35K</div><div class="rs">mensuales</div></div>
       <div class="rc"><div class="rl">Costos variables</div><div class="rr" id="r-var" style="color:var(--org);font-size:22px">$27K</div><div class="rs" id="r-var-s">filmmaker + pasarela</div></div>
       <div class="rc"><div class="rl">Neto a repartir</div><div class="rr" id="r-net" style="color:var(--grn)">$98K</div><div class="rs">50/50</div></div>
       <div class="rc"><div class="rl">Margen</div><div class="rr" id="r-mrg" style="color:var(--cyn)">61%</div><div class="rs" id="r-mrg-s">bueno</div></div>
-      <div class="rc"><div class="rl">Breakeven</div><div class="rr" id="r-be">5.8</div><div class="rs">clientes mÃ­n.</div></div>
+      <div class="rc"><div class="rl">Breakeven</div><div class="rr" id="r-be">5.8</div><div class="rs">clientes mín.</div></div>
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
@@ -277,7 +277,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
       <div class="rc"><div class="rl">Editores</div><div class="rr w" id="r-ed" style="font-size:24px">1</div><div class="rs" id="r-ed-s">auto</div></div>
       <div class="rc"><div class="rl">Videos/mes</div><div class="rr w" id="r-vd" style="font-size:24px">64</div><div class="rs">/mes total</div></div>
       <div class="rc"><div class="rl">Util. editor</div><div class="rr" id="r-ut" style="font-size:24px">98%</div><div class="rs" id="r-ut-s">alta</div></div>
-      <div class="rc"><div class="rl">DÃ­as estudio</div><div class="rr w" id="r-dy" style="font-size:24px">4</div><div class="rs" id="r-dy-s">2 cl/dÃ­a</div></div>
+      <div class="rc"><div class="rl">Días estudio</div><div class="rr w" id="r-dy" style="font-size:24px">4</div><div class="rs" id="r-dy-s">2 cl/día</div></div>
     </div>
   </div>
 
@@ -286,9 +286,9 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </section>
 
-<!-- âââ 2. COSTOS âââ -->
+<!-- ═══ 2. COSTOS ═══ -->
 <section class="sec" id="costs">
-  <div class="eye rv">02 â Desglose de Costos</div>
+  <div class="eye rv">02 — Desglose de Costos</div>
   <h1 class="rv rv-1">Cada peso<br><span class="a">contado.</span></h1>
   <div class="c rv rv-2">
     <div class="cb">
@@ -310,57 +310,57 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </section>
 
-<!-- âââ 3. P&L âââ -->
+<!-- ═══ 3. P&L ═══ -->
 <section class="sec" id="pnl">
-  <div class="eye rv">03 â Estado de Resultados</div>
+  <div class="eye rv">03 — Estado de Resultados</div>
   <h1 class="rv rv-1">P&L mensual,<br>semestral, <span class="a">anual.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
     <table class="tb"><thead><tr><th>Concepto</th><th>Mensual</th><th>6 meses</th><th>12 meses</th></tr></thead><tbody id="pnl-b"></tbody></table>
   </div>
 </section>
 
-<!-- âââ 4. INVERSIÃN INICIAL âââ -->
+<!-- ═══ 4. INVERSIÓN INICIAL ═══ -->
 <section class="sec" id="invest">
-  <div class="eye rv">04 â InversiÃ³n Inicial & Payback</div>
-  <h1 class="rv rv-1">Â¿En cuÃ¡nto tiempo<br>recuperas la <span class="a">inversiÃ³n?</span></h1>
-  <p class="lead rv rv-2">Landing page + adecuaciÃ³n de espacio = inversiÃ³n Ãºnica que se reparte 50/50 entre ambos crews.</p>
+  <div class="eye rv">04 — Inversión Inicial & Payback</div>
+  <h1 class="rv rv-1">¿En cuánto tiempo<br>recuperas la <span class="a">inversión?</span></h1>
+  <p class="lead rv rv-2">Landing page + adecuación de espacio = inversión única que se reparte 50/50 entre ambos crews.</p>
 
   <div class="g g4 rv rv-3">
-    <div class="c c-a" style="text-align:center"><div class="cl">InversiÃ³n total</div><div class="cv" id="i-tot">$50,000</div><div class="cs">landing + espacio</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">Inversión total</div><div class="cv" id="i-tot">$50,000</div><div class="cs">landing + espacio</div></div>
     <div class="c c-a" style="text-align:center"><div class="cl">Por crew (50%)</div><div class="cv w" id="i-pc">$25,000</div><div class="cs">cada uno pone</div></div>
     <div class="c c-a" style="text-align:center"><div class="cl">Payback</div><div class="cv gn" id="i-pb">0.5</div><div class="cs" id="i-pb-s">meses para recuperar</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">ROI aÃ±o 1</div><div class="cv gn" id="i-roi">2,300%</div><div class="cs">retorno sobre inversiÃ³n</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">ROI año 1</div><div class="cv gn" id="i-roi">2,300%</div><div class="cs">retorno sobre inversión</div></div>
   </div>
 
   <div class="sep"></div>
-  <h2 class="sh rv">AmortizaciÃ³n mes a mes</h2>
+  <h2 class="sh rv">Amortización mes a mes</h2>
   <div class="c rv" style="padding:20px">
     <div id="amort-chart" class="bc" style="height:180px"></div>
     <div style="display:flex;gap:16px;margin-top:10px;justify-content:center">
-      <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--sg);display:inline-block"></span> InversiÃ³n restante</span>
+      <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--sg);display:inline-block"></span> Inversión restante</span>
       <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--grn);display:inline-block"></span> Profit acumulado</span>
     </div>
   </div>
 </section>
 
-<!-- âââ 5. UNIT ECONOMICS âââ -->
+<!-- ═══ 5. UNIT ECONOMICS ═══ -->
 <section class="sec" id="unit">
-  <div class="eye rv">05 â Unit Economics (CFO View)</div>
-  <h1 class="rv rv-1">LTV, CAC, payback<br>y <span class="a">mÃ¡rgenes.</span></h1>
-  <p class="lead rv rv-2">MÃ©tricas clave de un CFO para bootstrapped businesses. Cada cliente es una unidad de negocio.</p>
+  <div class="eye rv">05 — Unit Economics (CFO View)</div>
+  <h1 class="rv rv-1">LTV, CAC, payback<br>y <span class="a">márgenes.</span></h1>
+  <p class="lead rv rv-2">Métricas clave de un CFO para bootstrapped businesses. Cada cliente es una unidad de negocio.</p>
 
   <div class="g g4 rv rv-3">
-    <div class="c c-a" style="text-align:center"><div class="cl">LTV por cliente</div><div class="cv gn" id="u-ltv">$120K</div><div class="cs">6 meses Ã ticket</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">CAC</div><div class="cv w" id="u-cac">$0</div><div class="cs">orgÃ¡nico via Pato</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">LTV:CAC</div><div class="cv gn" id="u-rat">â</div><div class="cs" id="u-rat-s">excelente (meta: â¥3x)</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">Gross margin / cliente</div><div class="cv" id="u-gm">72%</div><div class="cs">despuÃ©s de costos directos</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">LTV por cliente</div><div class="cv gn" id="u-ltv">$120K</div><div class="cs">6 meses × ticket</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">CAC</div><div class="cv w" id="u-cac">$0</div><div class="cs">orgánico via Pato</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">LTV:CAC</div><div class="cv gn" id="u-rat">∞</div><div class="cs" id="u-rat-s">excelente (meta: ≥3x)</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">Gross margin / cliente</div><div class="cv" id="u-gm">72%</div><div class="cs">después de costos directos</div></div>
   </div>
 
   <div class="sep"></div>
 
   <div class="g g3 rv">
     <div class="c" style="text-align:center"><div class="cl">Costo servir 1 cliente / mes</div><div class="cv w" id="u-csc" style="font-size:28px">$5,600</div><div class="cs" id="u-csc-s">editor + filmmaker + CM prorrateado</div></div>
-    <div class="c" style="text-align:center"><div class="cl">ContribuciÃ³n / cliente</div><div class="cv gn" id="u-con" style="font-size:28px">$14,400</div><div class="cs">ticket - costo directo</div></div>
+    <div class="c" style="text-align:center"><div class="cl">Contribución / cliente</div><div class="cv gn" id="u-con" style="font-size:28px">$14,400</div><div class="cs">ticket - costo directo</div></div>
     <div class="c" style="text-align:center"><div class="cl">Clientes para cubrir fijos</div><div class="cv" id="u-cov" style="font-size:28px">2.4</div><div class="cs" id="u-cov-s">punto muerto operativo</div></div>
   </div>
 
@@ -368,20 +368,20 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 
   <h2 class="sh rv">Rule of 40 (adaptado)</h2>
   <div class="c rv">
-    <p style="font-size:13px;color:var(--g400);margin-bottom:12px">Growth % + EBITDA Margin % â¥ 40% = negocio saludable. Para FSTOP en fase 1, el crecimiento viene del ramp-up de clientes.</p>
+    <p style="font-size:13px;color:var(--g400);margin-bottom:12px">Growth % + EBITDA Margin % ≥ 40% = negocio saludable. Para FSTOP en fase 1, el crecimiento viene del ramp-up de clientes.</p>
     <div class="g g3">
-      <div style="text-align:center"><div class="cl">Crecimiento estimado</div><div class="cv w" id="u-gr" style="font-size:28px">100%</div><div class="cs">de 0 a operaciÃ³n</div></div>
+      <div style="text-align:center"><div class="cl">Crecimiento estimado</div><div class="cv w" id="u-gr" style="font-size:28px">100%</div><div class="cs">de 0 a operación</div></div>
       <div style="text-align:center"><div class="cl">Margen EBITDA</div><div class="cv" id="u-eb" style="font-size:28px">61%</div><div class="cs">margen operativo</div></div>
       <div style="text-align:center"><div class="cl">Score Rule of 40</div><div class="cv gn" id="u-r40" style="font-size:28px">161</div><div class="cs" id="u-r40-s">muy por encima</div></div>
     </div>
   </div>
 </section>
 
-<!-- âââ 6. CASH FLOW 12 MESES âââ -->
+<!-- ═══ 6. CASH FLOW 12 MESES ═══ -->
 <section class="sec" id="cash">
-  <div class="eye rv">06 â Cash Flow Proyectado</div>
+  <div class="eye rv">06 — Cash Flow Proyectado</div>
   <h1 class="rv rv-1">12 meses<br>de <span class="a">flujo.</span></h1>
-  <p class="lead rv rv-2">ProyecciÃ³n con ramp-up gradual: mes 1 al 40%, mes 2 al 60%, mes 3 al 80%, mes 4+ al 100%. Incluye inversiÃ³n inicial.</p>
+  <p class="lead rv rv-2">Proyección con ramp-up gradual: mes 1 al 40%, mes 2 al 60%, mes 3 al 80%, mes 4+ al 100%. Incluye inversión inicial.</p>
   <div class="c rv rv-3" style="overflow-x:auto">
     <table class="tb"><thead><tr><th>Mes</th><th>Clientes</th><th>Revenue</th><th>Costos</th><th>Profit</th><th>Acumulado</th></tr></thead><tbody id="cf-b"></tbody></table>
   </div>
@@ -390,476 +390,381 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   <div class="c rv" style="padding:20px"><div id="cf-chart" class="bc" style="height:200px"></div></div>
 </section>
 
-<!-- âââ 7. HEATMAP âââ -->
+<!-- ═══ 7. HEATMAP ═══ -->
 <section class="sec" id="heat">
-  <div class="eye rv">07 â Mapa de Rentabilidad</div>
-  <h1 class="rv rv-1">Profit / crew:<br><span class="a">clientes Ã ticket.</span></h1>
+  <div class="eye rv">07 — Mapa de Rentabilidad</div>
+  <h1 class="rv rv-1">Profit / crew:<br><span class="a">clientes × ticket.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
     <table class="hm"><thead><tr><th></th><th>$12K</th><th>$15K</th><th>$18K</th><th>$20K</th><th>$22K</th><th>$25K</th><th>$30K</th><th>$35K</th></tr></thead><tbody id="hm-b"></tbody></table>
     <p style="font-family:var(--mono);font-size:8px;color:var(--g600);margin-top:10px;text-align:center">Valores = ganancia por crew (MXN/mes) con costos actuales del panel</p>
   </div>
 </section>
 
-<!-- âââ 8. ESCALA âââ -->
+<!-- ═══ 8. ESCALA ═══ -->
 <section class="sec" id="scale">
-  <div class="eye rv">08 â ProyecciÃ³n de Escala</div>
+  <div class="eye rv">08 — Proyección de Escala</div>
   <h1 class="rv rv-1">De 5 a 35 clientes.<br>Costos <span class="a">escalonados.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
-    <table class="tb"><thead><tr><th>MÃ©trica</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th></tr></thead><tbody id="sc-b"></tbody></table>
+    <table class="tb"><thead><tr><th>Métrica</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th></tr></thead><tbody id="sc-b"></tbody></table>
   </div>
   <div class="sep"></div>
   <div class="c rv" style="padding:20px"><div id="sc-ch" class="bc" style="height:220px"></div></div>
 </section>
 
-<!-- âââ 9. TIEMPO âââ -->
+<!-- ═══ 9. TIEMPO ═══ -->
 <section class="sec" id="time">
-  <div class="eye rv">09 â InversiÃ³n de Tiempo</div>
+  <div class="eye rv">09 — Inversión de Tiempo</div>
   <h1 class="rv rv-1">Tu tiempo<br>es tu <span class="a">activo.</span></h1>
   <div class="g g4 rv rv-2">
-    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-dy">4</div><div class="cl" style="margin-top:6px">DÃ­as estudio</div><div class="cs" id="ti-dy-s">si Creators graba</div></div>]Û\ÜÏHÈËXHÝ[OH^X[YÛÙ[\]Û\ÜÏHÝYHKZNÙ]]Û\ÜÏHÛÝ[OHX\Ú[]ÜÈÝ[\ËÛY\ÏÙ]]Û\ÜÏHÜÈÜXXÚpìÛ
-È]\ÚpìÛÙ]Ù]]Û\ÜÏHÈËXHÝ[OH^X[YÛÙ[\]Û\ÜÏHÝÛYHK\ÌÙ]]Û\ÜÏHÛÝ[OHX\Ú[]ÜÚÜHÜX]ÜÏÙ]]Û\ÜÏHÜÈ[Ü\ÛÈÜÜOÙ]Ù]]Û\ÜÏHÈËXHÝ[OH^X[YÛÙ[\]Û\ÜÏHÝÈYHKYÙ]]Û\ÜÏHÛÝ[OHX\Ú[]Ü0ëX\ÈX\ÏÙ]]Û\ÜÏHÜÈHÌÙ]Ù]Ù]]Û\ÜÏHÙ\Ù]]Û\ÜÏHÈÌ]Û\ÜÏHÈÈÝ[OHÛ\Ú^NMØÛÛÜ\K\\NÛX\Ú[XÝÛNÛÛ[[XZÙ\
-	KRËÙ0ëXJOÚÏÝ[OHÛ\Ú^NLØÛÛÜ\KYÍ
-HÜX]ÜÈÈH[\ÝY[ËÛÛÈ]\ØHYXÚpìÛ
-Ü[YHKYKZÜÜ[ËÛY\ÊK[[[XZÙ\\YÙHHÜXKÝÛÏpè^[XHX\YÜÝÛÏÜÙ]]Û\ÜÏHÈÈÝ[OHÛ\Ú^NMØÛÛÜ\K\ÙÊNÛX\Ú[XÝÛNÚ[[[XZÙ\
-ÜX]ÜÈÜXJOÚÏÝ[OHÛ\Ú^NLØÛÛÜ\KYÍ
-HÜX]ÜÈH[\ÝY[ÈÜ[YHK[YÜÜ[0ëX\ËÛY\ËÝ[Ü[YHK[ZNÜÜ[ËZÜ\È	Ü[YHK[\ÝÏÜÜ[ÛY\È[[[XZÙ\ÜÙ]Ù]ÜÙXÝ[ÛKKH8¥d8¥d8¥dLTQPÕÈ8¥d8¥d8¥dKOÙXÝ[ÛÛ\ÜÏHÙXÈYH\XÝ]Û\ÜÏH^YHL8 %\YXÝÈ[[Ù]HÛ\ÜÏHLH°¯Ñ\ÈÜ[Û\ÜÏHHXXOÏÜÜ[ÚO]Û\ÜÏHLYHÈYH]ÚÏYH\Ü]Û\ÜÏHYHZÙ]Ù]]Û\ÜÏHÈÌÈLÈÝ[OHX\Ú[]Ü]Û\ÜÏHÈÈÝ[OHÛ\Ú^NMØÛÛÜ\KYÜNÛX\Ú[XÝÛNÜ[^\ÏÚÏÝ[OHÛ\Ú^NLØÛÛÜ\KYÍ
-Hpè\Ù[\È[ÜËÐPÈÜðè[XÛÈ
-	
-KZÈY[\ÈHÜX]ÜË[Ù[È\ØØ[XHÛÛY]Ü\Ë[\ÚpìÛ[XÚX[ZHÛÛ^XXÚÈ°è\YËÜÙ]]Û\ÜÏHÈÈÝ[OHÛ\Ú^NMØÛÛÜ\K^[ÊNÛX\Ú[XÝÛNY\ÙÛÜÏÚÏÝ[OHÛ\Ú^NLØÛÛÜ\KYÍ
-H\[[ÚXHHÛÛ\ÚpìÛH]ËØ\XÚYYY]ÜHHYÈ[Z]HHÛY[\ÈÛÛYË][ÚpìÛÜÝMY\Ù\Ë[[XZÙ\\ÈÛÜÝÈ\XXH[ËÜÙ]]Û\ÜÏHÈÈÝ[OHÛ\Ú^NMØÛÛÜ\K\ÙÊNÛX\Ú[XÝÛN°ìÞ[[ÜÈ\ÛÜÏÚÏÝ[OHÛ\Ú^NLØÛÛÜ\KYÍ
-HKÛÝ^\È\ÝY[ÜÈÜ0ëXKÛÛ]\Y]Ü
-ÈÓKË[\\[[[ÈYÙH
-ÈY[ÈH[K[Y\]ÚHKNÛY[\ËÜÙ]Ù]ÜÙXÝ[Û]Û\ÜÏHÝÈY]ÐÞHLLÚYHZYÚHÌÝ[OHÛÛÜ\KYÍÌ
-NÛX\Ú[XÝÛNÚ\ÛHÞHLÞOHMH[HÛHÝÚÙOHÝ\[ÛÛÜÝÚÙK]ÚYHHÏÚ\ÛHÞHLÞOHMHLË[HÝ\[ÛÛÜÏÈÛ\ÜÏH[ÈÚ\ÛHÞHLÞOHKHHKH[HÝ\[ÛÛÜÏÙÏÜÝÏÕÔÛÛ[ÝY[È0­È[Ù[È[[ÚY\ÈÏÜÝ[OHX\Ú[]ÜÜÜX]ÜÈ0åÈ]ÈØÚØH0­ÈX[ÜÙ]ØÜ\ÛÛÝ	ZYOØÝ[Y[Ù][[Y[RY
-Y
-K[OÓØØ[TÝ[Ê	Ù\ËSV	ÊKÏ[OLYMÉÉ	ÊÊÌYMKÑ^Y
-JJÉÓIÎÉ	ÊÑX]Ý[
-JNÂ]Y]]Ï]YNÂ[Ý[ÛY[ÙJJ^ÙY]]Ï[OOOIØ]]ÉÎÉ
-	ÝYXIÊKÛ\ÜÓ\ÝÙÙÛJ	ØXÝ	ËY]]ÊNÉ
-	ÝY[IÊKÛ\ÜÓ\ÝÙÙÛJ	ØXÝ	ËYY]]ÊNÉ
-	ÜËYY	ÊK\ØXYYY]]ÎÔ
-_B[Ý[ÛJ
-^Ü]\ÂÛÉ
-	ÜËXÛ	ÊK[YKÎÉ
-	ÜË]ÉÊK[YKÉ
-	ÜË]	ÊK[YK]É
-	ÜË[]	ÊK[YKYÉ
-	ÜËYY	ÊK[YK\ÎÉ
-	ÜËY\ÉÊK[YKXÎÉ
-	ÜËYXÉÊK[YKÛNÉ
-	ÜËXÛIÊK[YKNÉ
-	ÜËYIÊK[YKÝÉ
-	ÜË\Ý	ÊK[YKØNÉ
-	ÜË\ØIÊK[YKÉ
-	ÜË[	ÊK[YKÜÉ
-	ÜË\Ü	ÊK[YKÝÎÉ
-	ÜËYÝÉÊK[YKÌL_B[Ý[ÛJÛË]YK\ËXËÛKKÝØKÝÊ^ÂÛÛÝ]XÛ
-ËXÛ
-ÂÛÛÝYÏYY]]ÏÓX]ÙZ[
-ÙXÊNYNÂÛÛÝYÛÜÝYYÊ\ÎÂÛÛÝ^\ÏSX]ÙZ[
-ÛÌNÂÛÛÝPÛÜÝYOÙJ^\ÎÂÛÛÝÝÐÛÜÝSX]Ý[
-]ÝÊNÂÛÛÝ^YÛÜÝÏYYÛÜÝ
-ØÛJÜÝ
-ÜØNÈËÈ[ÛH^YÛÛÝ\ÛÜÝÏYPÛÜÝ
-ÙÝÐÛÜÝÈËÈ\XXBÛÛÝÝ[ÛÜÝÏY^YÛÜÝÊÝ\ÛÜÝÎÂÛÛÝ]\]]Ý[ÛÜÝÎÂÛÛÝÏSX]Ý[
-]ÌNÂÛÛÝX\Ú[\]Ê]Ü]L
-NÂÛÛÝXÒSX]Ý[
-Û
-ÊK]SX]Ý[
-Û
-ÍJKÝ\XÒ
-Ü]ÂÛÛÝ][]ÊYÊXÊJLÂËÈXZÙ][]ONNNÂÜ]ÏLNØÏMØÊÏKJ^ÂÛÛÝXÊËSX]ÙZ[
-ËÌNÂÛÛÝOYY]]ÏÓX]ÙZ[
-ÊÙXÊNYNÂÛÛÝÛÏYJ\ÊØÛJÜÝ
-ÜØJÊOÙJ
-JÓX]Ý[
-ÝÊNÂY
-XÛÊKÌ[]
-^ØOXÎØXZßBBËÈÛÜÝ\ÛY[ÛÛÝ\XÝ\ÛY[SX]Ý[
+    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-dy">4</div><div class="cl" style="margin-top:6px">Días estudio</div><div class="cs" id="ti-dy-s">si Creators graba</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-hr">18</div><div class="cl" style="margin-top:6px">Hrs totales/mes</div><div class="cs">grabación + revisión</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv gn" id="ti-ph">$2,722</div><div class="cl" style="margin-top:6px">$/hora Creators</div><div class="cs">ingreso por hora</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv w" id="ti-fr">26</div><div class="cl" style="margin-top:6px">Días libres</div><div class="cs">de 30</div></div>
+  </div>
+  <div class="sep"></div>
+  <div class="g g2 rv">
+    <div class="c"><h3 style="font-size:14px;color:var(--pur);margin-bottom:8px">Con filmmaker ($5.5K/día)</h3><p style="font-size:12px;color:var(--g400)">Creators no va al estudio. Solo revisa edición (~<span id="ti-fm-h">6</span> hrs/mes). El filmmaker dirige y graba. <strong>Máxima libertad.</strong></p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:8px">Sin filmmaker (Creators graba)</h3><p style="font-size:12px;color:var(--g400)">Creators va al estudio <span id="ti-nf-d">4</span> días/mes. Total ~<span id="ti-nf-h">18</span> hrs. Ahorras $<span id="ti-nf-sv">22K</span>/mes en filmmaker.</p></div>
+  </div>
+</section>
 
-YÛÜÝØÛ
-JÊPÛÜÝØÛ
-JÊÛKØÛ
-JNÂÛÛÝÛÛX\ÛY[]ËY\XÝ\ÛY[SX]Ý[
-ÊÝÊNÂËÈÛÛÝ]ÊÂËÈÜÜÜÈX\Ú[\ÛY[ÛÛÝÛTÝ]ÏÊ
-ËY\XÝ\ÛY[SX]Ý[
-ÊÝÊJKÝÊL
-NÂËÈÜ\][ÈXZÙ][
-ÛY[ÈÈÛÝ\^YÛÜÝÈÛJBÛÛÝÜOXÛÛX\ÛY[Ê^YÛÜÝËYPÛÜÝYÝÐÛÜÝ
-KÈ
-ËSX]Ý[
-\ËÙXÊ
-KSX]Ý[
-ÛKØÛØÛKØÛ
-KSX]Ý[
-ÊÝÊJNÂ]\Ü]YËYÛÜÝPÛÜÝÝÐÛÜÝ^YÛÜÝË\ÛÜÝËÝ[ÛÜÝË]ËX\Ú[^\ËXÒ]Ý][K\XÝ\ÛY[ÛÛX\ÛY[ÛTÝÜ_BB[Ý[Û
-^ÂÛÛÝORJ
-NÂÛÛÝOSJKÛKËKK]KYK\ËKXËKÛKKKKÝKØKKÝÊNÂËÈ\Ü^\Â	
-	ÙXÛ	ÊK^ÛÛ[ZKÛÉ
-	Ù]ÉÊK^ÛÛ[IÉ	ÊÑKÊNÉ
-	Ù]	ÊK^ÛÛ[ZKÂ	
-	Ù[]	ÊK^ÛÛ[IÉ	ÊÑK]
-NÉ
-	ÙY\ÉÊK^ÛÛ[IÉ	ÊÑK\ÊNÉ
-	ÙYXÉÊK^ÛÛ[ZKXÎÂ	
-	ÙXÛIÊK^ÛÛ[ZKÛOÉÉ	ÊÑKÛJNÔÚ[ÓIÎÉ
-	ÙYIÊK^ÛÛ[ZKOÉÉ	ÊÑKJNÉ
-0îÜX\ÊIÎÂ	
-	Ù\Ý	ÊK^ÛÛ[IÉ	ÊÑKÝ
-NÉ
-	Ù\ØIÊK^ÛÛ[IÉ	ÊÑKØJNÂ	
-	Ù[	ÊK^ÛÛ[IÉ	ÊÑK
-NÉ
-	Ù\Ü	ÊK^ÛÛ[IÉ	ÊÑKÜ
-NÉ
-	ÙYÝÉÊK^ÛÛ[ZKÝÊL
-ÉÉIÎÂ	
-	ÙYY	ÊK^ÛÛ[[KYÎÚYYY]]ÊI
-	ÜËYY	ÊK[YOZKYÂ	
-	Ú\Ý	ÊK^ÛÛ[ZKÝOOLÉÔÚ[\ÝY[ÈZÈ8 %[HÜ0ëXIÎø¢b		ÊÑX]Ý[
-KÝÓX]X^
-K^\ËJJJJÉËÙ0ëXH0åÈ	ÊÛK^\ÊÉÈ0ëX\ÉÎÂËÈÜ\Ý[Â	
-	Ü\]ÊK^ÛÛ[QÊK]NÉ
-	Ü\]\ÉÊK^ÛÛ[ZKÛ
-ÉðåÉ	ÊÑKÊNÂ	
-	ÜY^	ÊK^ÛÛ[QÊK^YÛÜÝÊNÉ
-	Ü]\ÊK^ÛÛ[QÊK\ÛÜÝÊNÂ	
-	Ü]\\ÉÊK^ÛÛ[JKOÉÙ[[XZÙ\
-È	ÎÉÊJÉÜ\Ø\[IÎÂ	
-	Ü[]	ÊK^ÛÛ[QÊK]
-NÉ
-	Ü[]	ÊKÝ[KÛÛÜ[K]ÉÝ\KYÜIÎÝ\K\Y
-IÎÂ	
-	Ü[\ÉÊK^ÛÛ[[KX\Ú[Ñ^Y
-
-JÉÉIÎÂ	
-	Ü[\ÉÊKÝ[KÛÛÜ[KX\Ú[MÉÝ\KYÜIÎKX\Ú[MÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂ	
-	Ü[\Ë\ÉÊK^ÛÛ[[KX\Ú[MÉÙ^Ù[[IÎKX\Ú[MÉØY[ÉÎØZÉÎÂ	
-	ÜXIÊK^ÛÛ[[KOMLÉø¢'ÎKKÑ^Y
-JNÉ
-	ÜXIÊKÝ[KÛÛÜ[KOZKÛÉÝ\KYÜIÎÝ\K\Y
-IÎÂËÈÜ]ÂÛÛÝØÏ[KÏZK]ÉÝ\KYÜIÎKÏZK]
-ÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂÛÛÝÙ[KËZK]ÙXÙLÉÊÉ	ÊÑÙ
-JÉÈÛØHY]IÎËI	ÊÑX]XÊÙ
-JJÉÈZÈY]IÎÂÉØÜË	ÜI×KÜXXÚ
-YOÉ
-	ÜIÊÚY
-K^ÛÛ[QÊKÊNÉ
-	ÜIÊÚY
-KÝ[KÛÛÜXØÎÉ
-	ÜIÊÚY
-ÉË\ÉÊK^ÛÛ[XÙÂÛÛÝSX]Z[KËÚK]
-LML
-NÉ
-	ÙËIÊÚY
-KÝ[KÚYSX]Z[L
-JÉÉIÎÉ
-	ÙËIÊÚY
-KÝ[KXÚÙÜÝ[XØÎÉ
-	ÙËIÊÚY
-ÉË\	ÊK^ÛÛ[SX]Ý[
-
-JÉÉIÎÉ
-	ÙËIÊÚY
-ÉË\	ÊKÝ[KÛÛÜXØßJNÂ	
-	ÜYY	ÊK^ÛÛ[[KYÎÉ
-	ÜYY\ÉÊK^ÛÛ[JY]]ÏÉØ]]ÉÎÛX[X[	ÊJÉÈ0­ÈØ\	ÊÛKYÊKXÎÂ	
-	Ü]	ÊK^ÛÛ[[KÉ
-	ÜYIÊK^ÛÛ[[K^\ÎÂÛÛÝXÏ[K][MÍOÉÝ\KYÜIÎK][NLÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂ	
-	Ü]]	ÊK^ÛÛ[SX]Ý[
-K][
-JÉÉIÎÉ
-	Ü]]	ÊKÝ[KÛÛÜ]XÎÂ	
-	Ü]]\ÉÊK^ÛÛ[[K][MÍOÉÚÛØYÉÎK][NLÉØ[IÎØ[0ë[Z]IÎÂËÈÝ]\ÂÛÛÝ[KÏZK]^[KÏZK]
-KÎÂ	
-	ÜÝ]\ÉÊKÝ[KÜ\ÛÛÜ]ÉÜØJÍNMËMÊIÎÜØJÎKÊIÎÂ	
-	ÜÝ]\ÉÊKÝ[KXÚÙÜÝ[]ÉÛ[X\YÜYY[
-LÍYYËØJÍNMËMJKØJÍNMËMJJIÎÛ[X\YÜYY[
-LÍYYËØJÎKJKØJÎKJJIÎÂ	
-	ÜÝ]	ÊK^ÛÛ[Y^ÉÑ^Ù[[IÎÉÕXXIÎÓÈXXIÎÉ
-	ÜÝ]	ÊKÝ[KÛÛÜ]ÉÝ\KYÜIÎÝ\K\Y
-IÎÂ	
-	ÜÝ\	ÊK[\S]Ø[XÜÈÜ]ÜÈØ[[ÝÛÏ	ÑKÊ_KÛY\ÏÜÝÛÏ	ÛKYßHY]ÜÛKYÏOÉÙ\ÉÎÉßK	ÚKOÉÑ[[XZÙ\		ÊÑKPÛÜÝ
-JÉËÛY\ËÎÉßH	ÚKÛOÉÐÓHØHXXØXÚpìÛÎÉßHÜX]ÜÎÛKÝHËÛY\ËØYHÜ]ÈØ[\°ëXHÝÛÏ	ÑKÊ_KÛY\ÏÜÝÛÏ8 %ÝÛÏ	ÑX]XÊÙ
-J_HZÈY]OÜÝÛÏXÙ\Ú]\È	ÛKOLÛKKÑ^Y
-
-JÉÈÛY[\ÉÎÜÝX\XÚÙ]	ßHÈYXÚ\ÛÜÝÜËÂÛ]
-KJNØÛÜÝÊKJNÜ
-KJNÚ[\Ý
-KJNÝ[]
-KJNØØ\ÚÝÊKJNÚX]X\
-JNÜØØ[JJNÝ[YJKJNÝ\XÝ
-KJNÂØÝ[Y[]Y\TÙ[XÝÜ[
-	ËÊKÜXXÚ
-OÛ\ÜÓ\Ý[[ÝJ	ØXÝ	ÊJNÂB[Ý[ÛÛ]
-KJ^ÂÛÛÝ][\ÏVÂÛÑY]Ü\ÊH0åÉÊÛKYËNKYÛÜÝÎÈÑÌÌ	ßKÛÑ[[XZÙ\ËNKPÛÜÝÎÈÎPÑßKÛÑ\ÝY[ÉËNKÝÎÈÌ	ßKÛÐÛÛ[][]HYÜËNKÛKÎÈÌÐßKÛÔØXTÈZÜÉËNKØKÎÈÑMÌÌMßKÛÔ\Ø\[H	ÊÚKÝÊL
-ÉÉIËNKÝÐÛÜÝÎÈÑPÍNIßKK[\OO
-NÂÛÛÝZ][\ËYXÙJ
-Ë
-OOÊÞK
-NÉ
-	Ù]	ÊK^ÛÛ[QÊ
-NÂÛÛÝNÚ\ÏLX]JÛ]ÙLÝÏIÉÎÂ][\ËÜXXÚ
-OØÛÛÝ^KÝ\
-Ú\ËÏXÚ\ËYÜÝÊÏXÚ\ÛHÞHLÞOHLHÜH[HÛHÝÚÙOHÞßHÝÚÙK]ÚYHÝÚÙKY\Ú\^OHÙH	ÙßHÝÚÙKY\ÚÙÙ]HË[ÙH[ÙÜOHÝ]JNLLL
-HÝ[OH[Ú][Û[\ÈÏÛÙÏYJNÂ	
-	ÙÛ]	ÊK[\S\ÝÎÂ	
-	Ù[YÉÊK[\SZ][\ËX\
-O]Û\ÜÏHÛZH]Û\ÜÏHÙÝ[OHXÚÙÜÝ[ÞßHÙ]]Û\ÜÏHÛÞOÙ]]Û\ÜÏHØH	ÑJ_OÙ]]Û\ÜÏHÜÓX]Ý[
-KÝ
-L
-_IOÙ]Ù]
-KÚ[	ÉÊNÂB[Ý[ÛÛÜÝÊKJ^ÂÛÛÝ^VÖÉÑY]Ü\ÊIËKYÛÜÝKÉÐÛÛ[][]HX[YÙ\ËKÛWKÉÑ\ÝY[ÉËKÝKÉÔØXTÈ
-X[PÚ]ÜÝ[Ë]ËIËKØWWK[\OÌWO
-NÂÛÛÝ\OVÖÉÑ[[XZÙ\
-		ÊÑKJJÉËÙ0ëXH0åÈ	ÊÛK^\ÊÉÈ0ëX\ÊIËKPÛÜÝKÉÔ\Ø\[H
-	ÊÚKÝÊL
-ÉÉJIËKÝÐÛÜÝWK[\OÌWO
-NÂÛÛÝÝÏJX[[]
-OO]Ý[OH\Ü^N^Ú\ÝYKXÛÛ[ÜXÙKX]ÙY[ÜY[ÎØÜ\XÝÛN\ÛÛYØJMKMKMK
-NÙÛ\Ú^NLÜ[Ý[OHÛÛÜ\KYÍ
-HÛX[OÜÜ[Ü[Ý[OHÛY[Z[N\K[[ÛÊNÙÛ]ÙZYÚL	Ñ[]
-_OÜÜ[Ù]Â	
-	ØÙ[\Ý	ÊK[\SY^X\
-OÝÊÌKÌWJJKÚ[	ÉÊJØ]Ý[OH\Ü^N^Ú\ÝYKXÛÛ[ÜXÙKX]ÙY[ÜY[ÎÙÛ\Ú^NLÜÙÛ]ÙZYÚÌØÜ\]ÜÛÛY\KYÍÌ
-NÛX\Ú[]ÜÜ[Ý[ZÜÏÜÜ[Ü[Ý[OHÛY[Z[N\K[[ÛÊNØÛÛÜ\K\ÙÊH	ÑK^YÛÜÝÊ_OÜÜ[Ù]Â	
-	ØÝ[\Ý	ÊK[\S]\KX\
-OÝÊÌKÌWJJKÚ[	ÉÊJØ]Ý[OH\Ü^N^Ú\ÝYKXÛÛ[ÜXÙKX]ÙY[ÜY[ÎÙÛ\Ú^NLÜÙÛ]ÙZYÚÌØÜ\]ÜÛÛY\KYÍÌ
-NÛX\Ú[]ÜÜ[Ý[\XX\ÏÜÜ[Ü[Ý[OHÛY[Z[N\K[[ÛÊNØÛÛÜ\K[ÜÊH	ÑK\ÛÜÝÊ_OÜÜ[Ù]ÂB[Ý[Û
-KJ^ÂÛÛÝ]O\[ÙOOIÛ[X\ÏÊOOLÉÉÎÉËI	ÊÑX]XÊJNÉ	ÊÑJNÂÛÛÝÝÜÏVÂÉÒ[Ü\ÛÜÈ]ÜÉËK]K]K]L	É×KÉÈÛÛZ\ÚpìÛ\Ø\[IË[KÝÐÛÜÝ[KÝÐÛÜÝ
-[KÝÐÛÜÝ
-L	É×KÉÒ[Ü\ÛÜÈ]ÜÉËK][KÝÐÛÜÝ
-K][KÝÐÛÜÝ
-J
-K][KÝÐÛÜÝ
-JL	Ý]	×KÉÈ	Ë	ÜÜ	×KÉÑY]Ü\ÊH0åÉÊÛKYË[KYÛÜÝ[KYÛÜÝ
-[KYÛÜÝ
-L	É×KÉÑ[[XZÙ\Ë[KPÛÜÝ[KPÛÜÝ
-[KPÛÜÝ
-L	É×KÉÐÛÛ[][]HX[YÙ\ËZKÛKZKÛJZKÛJL	É×KÉÑ\ÝY[ÉËZKÝZKÝ
-ZKÝ
-L	É×KÉÔØXTÈÈ\[ZY[\ÉËZKØKZKØJZKØJL	É×KÉÕÝ[ÛÜÝÜÈÜË[KÝ[ÛÜÝË[KÝ[ÛÜÝÊ[KÝ[ÛÜÝÊL	Ý]	×KÉÈ	Ë	ÜÜ	×KÉÕ][YYÜ\]]IËK]K]
-K]
-L	Ý\	×KÉÓX\Ù[ËKX\Ú[Ñ^Y
-JJÉÉIË	ÉË	ÉË	É×KÉÈ	Ë	ÜÜ	×KÉÐÜ]ÈÜX]ÜÈ
-L	JIËKËKÊKÊL	ÝXÉ×KÉÐÜ]È]È
-L	JIËKËKÊKÊL	ÝXÉ×KNÂ	
-	ÜXÊK[\S\ÝÜËX\
-OÍOOOIÜÜ	ÏÉÏÛÛÜ[HÝ[OHY[ÎÜØÜ\ÛHÝÝÎÛ\ÜÏHÜÍ_HÜÌ_OÝÙÌWJ_OÝÙÌJ_OÝÙÌ×J_OÝÝ
-KÚ[	ÉÊNÂB[Ý[Û[\Ý
-KJ^ÂÛÛÝ[ZK
-ÚKÜ\Ü]ÏSX]Ý[
-[ÌNÂÛÛÝ[ÛTÙ][K]ÈËÈÝ[]YÜHÜ]8 %][\ÝY[\ÈÚ\YÛÛÝ^XXÚÏ[[ÛTÙ]Ê[Û[ÛTÙ]
-NNNÂÛÛÝÚLL\\Ü]ÏÊ
-KÊL\\Ü]ÊKÜ\Ü]ÊL
-NÂ	
-	ÚK]Ý	ÊK^ÛÛ[IÉ	ÊÑ[NÉ
-	ÚK\ÉÊK^ÛÛ[IÉ	ÊÑ\Ü]ÊNÂ	
-	ÚK\ÊK^ÛÛ[\^XXÚÏLÜ^XXÚËÑ^Y
-JNø¢'ÎÂ	
-	ÚK\ÊKÝ[KÛÛÜ\^XXÚÏLÉÝ\KYÜIÎ^XXÚÏMÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂ	
-	ÚK\\ÉÊK^ÛÛ[\^XXÚÏLOÉÜÙHXÝ\\H[[Y\Y\ÉÎ^XXÚÏLÏÉÜXÝ\\XÚpìÛ°è\YIÎÜXÝ\\XÚpìÛ[IÎÂ	
-	ÚK\ÚIÊK^ÛÛ[\ÚLLÓX]Ý[
-ÚLLJÉÉIÎÓÐIÎÂ	
-	ÚK\ÚIÊKÝ[KÛÛÜ\ÚLLLÉÝ\KYÜIÎÚLLMLÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂËÈ[[Ü^][ÛÚ\ÛÛÝ[\VËKKKKKKKKWNÂ]XØÝ[OKZ[[IÉÎÂÛÛÝ[Ï\[\X\
+<!-- ═══ 10. VEREDICTO ═══ -->
+<section class="sec" id="verdict">
+  <div class="eye rv">10 — Veredicto Final</div>
+  <h1 class="rv rv-1">¿Es <span class="a">viable?</span></h1>
+  <div class="vb rv rv-2" id="fv"><h3 id="fv-t"></h3><p id="fv-p"></p><div class="vh" id="fv-h"></div></div>
+  <div class="g g3 rv rv-3" style="margin-top:20px">
+    <div class="c"><h3 style="font-size:14px;color:var(--grn);margin-bottom:6px">Fortalezas</h3><p style="font-size:12px;color:var(--g400)">Márgenes altos, CAC orgánico ($0), bajo tiempo de Creators, modelo escalable con editores, inversión inicial baja con payback rápido.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--ylw);margin-bottom:6px">Riesgos</h3><p style="font-size:12px;color:var(--g400)">Dependencia de conversión de Pato, capacidad editor a 65 vids limita a ~8 clientes con 8 vids, retención post-6 meses, filmmaker es costo variable alto.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:6px">Próximos pasos</h3><p style="font-size:12px;color:var(--g400)">1. Cotizar 3 estudios por día. 2. Contratar editor + CM. 3. Invertir en landing page + video de venta. 4. Primer batch de 5-8 clientes.</p></div>
+  </div>
+</section>
 
-Y
-OOØÛÛÝ[K]Ï[KÝ[ÛÜÝÊOËÊÜ
-ÎJKÙ\XÎØXØÝ[JÏ\ÙÜ]\ÜËÙXØÝ[__JNÂÛÛÝX^OSX]X^
-[ËX\
-OX]XÊXØÝ[JJK[NÂ[ËÜXXÚ
+<div class="ft">
+  <svg viewBox="0 0 100 108" width="28" height="30" style="color:var(--g700);margin-bottom:8px"><circle cx="50" cy="54" r="46" fill="none" stroke="currentColor" stroke-width="4.5"/><circle cx="50" cy="54" r="13.8" fill="currentColor"/><g class="ao"><circle cx="50" cy="5.5" r="5.5" fill="currentColor"/></g></svg>
+  <p>FSTOP Content Studio · Modelo Financiero v3</p>
+  <p style="margin-top:3px">Creators × Pato Ochoa · Abril 2026</p>
+</div>
 
-Y
-OOÂÛÛÝSX]XÊXØÝ[JKÛX^JNÂÛÛÝÛÛ]XØÝ[OLÉÝ\KYÜIÎÝ\K\ÙÊIÎÂ[
-ÏX]Û\ÜÏHÈ]Û\ÜÏHÝ[OHÛ\Ú^NØÛÛÜØÛÛHÑÊXØÝ[J_OÙ]]Û\ÜÏHÝ[OHZYÚÓX]X^
-Ê_INØXÚÙÜÝ[ØÛÛHÙ]]Û\ÜÏHIÚY
-Ì_OÙ]Ù]ÂJNÂ	
-	Ø[[ÜXÚ\	ÊK[\SZ[ÂB[Ý[Û[]
-KJ^ÂÛÛÝZKÊÉ
-	ÝK[ÊK^ÛÛ[QÊNÂ	
-	ÝKXØXÉÊK^ÛÛ[IÉ	ÎÉ
-	ÝK\]	ÊK^ÛÛ[Iø¢'ÎÂ	
-	ÝKYÛIÊK^ÛÛ[[KÛTÝÑ^Y
-
-JÉÉIÎÉ
-	ÝKYÛIÊKÝ[KÛÛÜ[KÛTÝMÉÝ\KYÜIÎKÛTÝMÉÝ\K^[ÊIÎÝ\K\Y
-IÎÂ	
-	ÝKXÜØÉÊK^ÛÛ[IÉ	ÊÑK\XÝ\ÛY[
-NÂ	
-	ÝKXÜØË\ÉÊK^ÛÛ[IÙY]ÜÊÊKOÉÈ
-È[[XZÙ\ÎÉÊJÊKÛOÉÈ
-ÈÓIÎÉÊJÈ	ÈÜ]XYÉÎÂ	
-	ÝKXÛÛÊK^ÛÛ[IÉ	ÊÑKÛÛX\ÛY[
-NÂ	
-	ÝKXÛÛÊKÝ[KÛÛÜ[KÛÛX\ÛY[ÉÝ\KYÜIÎÝ\K\Y
-IÎÂËÈÛY[ÈÈÛÝ\^YÝ\XY
-ÝY[È
-ÈØX\ÈÛKÚ[ÙHY]ÜÙKØÛHØØ[JBÛÛÝ^YÝ\XYZKÝ
-ÚKØNÂÛÛÝÛÝÛY[Ï[KÛÛX\ÛY[Ê^YÝ\XYÛKÛÛX\ÛY[
-NNNÂ	
-	ÝKXÛÝÊK^ÛÛ[XÛÝÛY[ÏLØÛÝÛY[ËÑ^Y
-JNø¢'ÎÂ	
-	ÝKXÛÝÊKÝ[KÛÛÜXÛÝÛY[ÏZKÛÉÝ\KYÜIÎÝ\K\Y
-IÎÂ	
-	ÝKXÛÝ\ÉÊK^ÛÛ[IØÛY[\È\HÝX\ZÜÈ
-		ÊÑ^YÝ\XY
-JÉÊIÎÂ	
-	ÝKYXÊK^ÛÛ[[KX\Ú[Ñ^Y
-
-JÉÉIÎÉ
-	ÝKYXÊKÝ[KÛÛÜ[KX\Ú[MÉÝ\KYÜIÎÝ\K\Y
-IÎÂÛÛÝLL
-ÛKX\Ú[É
-	ÝK\	ÊK^ÛÛ[SX]Ý[
-
-NÂ	
-	ÝK\	ÊKÝ[KÛÛÜ\MÉÝ\KYÜIÎÝ\K\Y
-IÎÂ	
-	ÝK\\ÉÊK^ÛÛ[\LLÉÙ^Ù\Ú[Û[	ÎMÉÜØ[YXIÎÛYZÜ\ÎÂ	
-	ÝKYÜÊK^ÛÛ[IÌL	IÎÂB[Ý[ÛØ\ÚÝÊKJ^ÂÛÛÝ[\VËKKKKKKKKWNÂÛÛÝ[ZK
-ÚKÜÂ]XØÝ[OKZ[[IÉÎÂÛÛÝ]OV×NÂ[\ÜXXÚ
+<script>
+const $=id=>document.getElementById(id),F=n=>n.toLocaleString('es-MX'),FK=n=>n>=1e6?'$'+(n/1e6).toFixed(1)+'M':'$'+F(Math.round(n));
+let edAuto=true;
 
-Y
-OOÂÛÛÝÛSX]Ý[
-KÛ
-
-NÂÛÛÝXÛ
-KÎÂÛÛÝ[OSJÛKËKK]KYK\ËKXËKÛKKKKÝKØKKÝÊNÂÛÛÝÙ[[K]ÂXØÝ[JÏ\ÙÂ]K\Ú
-ØÛÎ[KÝ[ÛÜÝËÙXØÝ[_JNÂÛÛÝXÐÛÛXXØÝ[OLÉØÛÛÜ\KYÜIÎØÛÛÜ\K\Y
-IÎÂ[
-ÏXY\È	ÚY
-Ì_OÝØÛOÝ	Ñ_OÝÝ[OHÛÛÜ\K\Y
-HI	Ñ[KÝ[ÛÜÝÊ_OÝÝ[OHÛÛÜÜÙLÉÝ\KYÜIÎÝ\K\Y
-IßH	ÑÙ_OÝÝ[OHØXÐÛÛNÙÛ]ÙZYÚØXØÝ[OLÉÉÎÉßI	ÑXØÝ[J_OÝÝÂJNÂËÈY[\ÝY[ÝÈ]Ü	
-	ØÙXÊK[\SXÝ[OHXÚÙÜÝ[ØJMKLKJH[\ÚpìÛÝ¸ %Ý¸ %ÝÝ[OHÛÛÜ\K\Y
-HI	Ñ[_OÝÝ[OHÛÛÜ\K\Y
-HI	Ñ[_OÝÝ[OHÛÛÜ\K\Y
-NÙÛ]ÙZYÚI	Ñ[_OÝÝ
-Ú[ÂËÈÚ\ÛÛÝX^OSX]X^
-]KX\
-OX]XÊXØÝ[JJK[NÂ	
-	ØÙXÚ\	ÊK[\SY]KX\
+function edMode(m){edAuto=m==='auto';$('tb-ea').classList.toggle('act',edAuto);$('tb-em').classList.toggle('act',!edAuto);$('s-ed').disabled=edAuto;R()}
 
-Y
-OOÂÛÛÝSX]XÊXØÝ[JKÛX^JNÂÛÛÝÛÛYXØÝ[OLÉÝ\KYÜIÎÝ\K\ÙÊIÎÂ]\]Û\ÜÏHÈ]Û\ÜÏHÝ[OHÛ\Ú^NØÛÛÜØÛÛHÑÊXØÝ[J_OÙ]]Û\ÜÏHÝ[OHZYÚÓX]X^
-Ê_INØXÚÙÜÝ[ØÛÛHÙ]]Û\ÜÏHIÚY
-Ì_OÙ]Ù]ÂJKÚ[	ÉÊNÂB[Ý[ÛX]X\
-J^ÂÛÛÝÜÏVÌLMLNLÌÍLNÂÛÛÝÛÏVÍKËLLMKKÌNÂ	
-	ÚKXÊK[\SXÛËX\
-ÏOÂ]\ÏÛ\ÜÏHÊØÊÉÈÛÝÊÝÜËX\
-OÂÛÛÝ[OSJËKK]KYK\ËKXËKÛKKKKÝKØKKÝÊNÂÛÛÝÏ[[KÎÛ]ËÛÎÂYÏZK]
-KÊ^ØÏIÜØJÍNMËMJIÎØÛÏIÈÍYN	ßB[ÙHYÏZK]
-^ØÏIÜØJÍNMËMLIÎØÛÏIÈÎYXÉßB[ÙHYÏZK]
-Ê^ØÏIÜØJLKNLKÍLIÎØÛÏIÈÙÙÍ	ßB[ÙHYÏL
-^ØÏIÜØJÎKLIÎØÛÏIÈÙØMXMIßB[Ù^ØÏIÜØJÎKJIÎØÛÏIÈÙÌMÌIßB]\Ý[OHXÚÙÜÝ[ØßNØÛÛÜØÛßH	ÑX]Ý[
-ËÌL
-J_RÏÝÂJKÚ[	ÉÊJÉÏÝÎÂJKÚ[	ÉÊNÂB[Ý[ÛØØ[JJ^ÂÛÛÝÏVÍKLMKKÌÍWNÂÛÛÝÝÜÏVÂÛÔ][YIËOOÊK]_KÛÕY[ÜËÛY\ÉËOOKKÛÑY]Ü\ÉËOOKYßKÛÑ[[XZÙ\ÛY\ÉËOOÊKPÛÜÝ
-_KÛÐÛÜÝÜÈÝ[\ÉËOOÊKÝ[ÛÜÝÊKÎÝ]	ßKÛÔÜÜ]ÉËOOÊKÊKÎÝXÉßKÛÓX\Ù[ËOOKX\Ú[Ñ^Y
-
-JÉÉIßKÛÑ0ëX\È\ÝY[ÉËOOK^\ßKÛÉÚÜIËOOÉ	ÊÑKÝÓX]Ý[
-KËÛKÝ
-N
-_KNÂ	
-	ÜØËXÊK[\S\ÝÜËX\
-OÏÛ\ÜÏHÊÊß	ÉÊJÉÈÊÜ
-ÉÏÝÊÛËX\
-OÂÛÛÝ[OSJKËKK]KYK\ËKXËKÛKKKKÝKØKKÝÊNÂ]\ÏÊÜ[JJÉÏÝÎßJKÚ[	ÉÊJÉÏÝÊKÚ[	ÉÊNÂËÈÚ\ÛÛÝ[Ù[Ï[ËX\
-OJKËKK]KYK\ËKXËKÛKKKKÝKØKKÝÊJNÂÛÛÝ^SX]X^
-[Ù[ËX\
-OOK]JNÂ	
-	ÜØËXÚ	ÊK[\S[ËX\
+function I(){return{
+  cl:+$('s-cl').value, tk:+$('s-tk').value, vd:+$('s-vd').value, mt:+$('s-mt').value,
+  ed:+$('s-ed').value, es:+$('s-es').value, ec:+$('s-ec').value,
+  cm:+$('s-cm').value, fm:+$('s-fm').value,
+  st:+$('s-st').value, sa:+$('s-sa').value,
+  lp:+$('s-lp').value, sp:+$('s-sp').value, gw:+$('s-gw').value/100
+}}
 
-Y
-OOÂÛÛÝ[O[[Ù[ÖÚYNÂÛÛÝ[[K]Û^
-KÒSX]X^
-[KËÛ^
-KKÛÒSX]X^
-[KÝ[ÛÜÝËÛ^
-KNÂ]\]Û\ÜÏHÈ]Û\ÜÏHÝ[OHÛ\Ú^NÑÊ[KÊ_KØÜÙ]]Ý[OH\Ü^N^ÙØ\Ø[YÛZ][\Î^Y[ÝÚYL	NÙ^H]Û\ÜÏHÝ[OHZYÚÜINØXÚÙÜÝ[\K\ÙÊNÙ^HÙ]]Û\ÜÏHÝ[OHZYÚÓX]X^
-Ò_INØXÚÙÜÝ[Û[KÏZK]ÉÝ\KYÜIÎÝ\K\Y
-IßNÙ^HÙ]]Û\ÜÏHÝ[OHZYÚØÛÒINØXÚÙÜÝ[\K\\NÙ^NÛÜXÚ]NÙ]Ù]]Û\ÜÏHÛOÙ]Ù]ÂJKÚ[	ÉÊNÂB[Ý[Û[YJKJ^ÂÛÛÝÜ]ÑÜXÏZKOOOLÂ	
-	ÝKYIÊK^ÛÛ[XÜ]ÑÜXÏÛK^\ÎÌ	ÎÂ	
-	ÝKYIÊKÝ[KÛÛÜXÜ]ÑÜXÏÉÝ\K\ÙÊIÎÝ\KYÜIÎÂÛÛÝÏXÜ]ÑÜXÏÛKÝK]Â	
-	ÝKZÊK^ÛÛ[ZÎÂÛÛÝZÏÓX]Ý[
-KËÚÊNÂ	
-	ÝK\	ÊK^ÛÛ[IÉ	ÊÑ
-NÂ	
-	ÝKYÊK^ÛÛ[LÌJÜ]ÑÜXÏÛK^\Î
-NÂ	
-	ÝKYKZ	ÊK^ÛÛ[[K]Â	
-	ÝK[Y	ÊK^ÛÛ[[K^\ÎÉ
-	ÝK[Z	ÊK^ÛÛ[[KÝÂ	
-	ÝK[\ÝÊK^ÛÛ[QKPÛÜÝ
-NÂ	
-	ÝKYK\ÉÊK^ÛÛ[XÜ]ÑÜXÏÛK^\ÊÉÈ0ëX\È[\ÝY[ÉÎÙ[[XZÙ\ÜXIÎÂB[Ý[Û\XÝ
-KJ^ÂÛÛÝ[KÏZK]^[KÏZK]
-KNÂÛÛÝI
-	ÙÊNÂÝ[KÜ\ÛÛÜ]ÉÜØJÍNMËMÊIÎÜØJÎKÊIÎÂÝ[KXÚÙÜÝ[]ÉÛ[X\YÜYY[
-LÍYYËØJÍNMËMJKØJÍNMËMJJIÎÛ[X\YÜYY[
-LÍYYËØJÎKJKØJÎKJJIÎÂ	
-	Ù]	ÊK^ÛÛ[Y^ÉÓ]^HXXKÎÉÔðëK\ÈXXKÎÓÈXXHÛÛ\ÝÜÈ°îY\ÜËÎÂ	
-	Ù]	ÊKÝ[KÛÛÜ]ÉÝ\KYÜIÎÝ\K\Y
-IÎÂÛÛÝ[ZK
-ÚKÜ^XXÚÏ[K]Ê[ÛK]
-NNNÂÛÛÝÜ]ÑÜXÏZKOOOLÏXÜ]ÑÜXÏÛKÝK]ZÏÓX]Ý[
-KËÚÊNÂ	
-	Ù\	ÊK[\S]ØÛÛÝÛÏÚKÛHÛY[\ÈH		ÑKÊ_OÜÝÛÏØYHÜ]ÈØ[HÝÛÏ	ÑKÊ_KÛY\ÏÜÝÛÏ[\ÚpìÛ[XÚX[HÝÛÏ	Ñ[_OÜÝÛÏÙHXÝ\\H[ÝÛÏÜ^XXÚËÑ^Y
-J_HY\Ù\ÏÜÝÛÏ	ÚKOÉÑ[[XZÙ\ÝY\ÝH		ÊÑKPÛÜÝ
-JÉËÛY\È\ÈX\HHÜX]ÜÈ[\ÝY[ËÎÐÜX]ÜÈÜXH	ÊÛK^\ÊÉÈ0ëX\ËÛY\ËßH	ÚKÛOÉÐÓH
-		ÊÑKÛJJÉÊHÝXHXXØXÚpìÛÎÉßHX\Ù[ÝÛÏÛKX\Ú[Ñ^Y
-
-_IOÜÝÛÏÜÛY[NÝÛÏ	ÑKÊ_OÜÝÛÏ
-Y\Ù\ÊKÛÛÝÛÏÚKÛHÛY[\ÈH		ÑKÊ_OÜÝÛÏØYHÜ]ÈØ[\°ëXHÛÛÈÝÛÏ	ÑKÊ_KÛY\ÏÜÝÛÏ[[ÝÛÏ	ÑK][KÊ_OÜÝÛÏ\HHY]K	ÛKOLÉÓXÙ\Ú]\È	ÊÛKKÑ^Y
-
-JÉÈÛY[\ÉÎÔÝXH[XÚÙ]	ßHÈYXÙHÛÜÝÜÉÚKOÉÈ
-Z]Z]\[[XZÙ\ZÜH		ÊÑKPÛÜÝ
-JÉÊIÎÉßKÂ	
-	ÙZ	ÊK^ÛÛ[]Ø	ÚÜN		Ñ
-_H0­È^XXÚÈ[\ÚpìÛ	Ü^XXÚËÑ^Y
-J_HY\Ù\È0­ÈÒHpì[ÈN	ÓX]Ý[
+function M(cl,tk,vd,mt,edM,es,ec,cm,fm,st,sa,gw){
+  const rev=cl*tk, tvd=cl*vd;
+  const eds=edAuto?Math.ceil(tvd/ec):edM;
+  const edCost=eds*es;
+  const days=Math.ceil(cl/2);
+  const fmCost=fm>0?fm*days:0;
+  const gwCost=Math.round(rev*gw);
+  const fixedCosts=edCost+cm+st+sa; // monthly fixed
+  const varCosts=fmCost+gwCost; // variable
+  const totalCosts=fixedCosts+varCosts;
+  const net=rev-totalCosts;
+  const pc=Math.round(net/2);
+  const margin=rev>0?(net/rev*100):0;
+  const recH=Math.round(cl*3), revH=Math.round(cl*.75), totH=recH+revH;
+  const util=tvd/(eds*ec)*100;
+  // breakeven
+  let be=99;
+  for(let c=1;c<=60;c+=.1){
+    const r=c*tk,d=Math.ceil(c/2);
+    const e=edAuto?Math.ceil(c*vd/ec):edM;
+    const co=e*es+cm+st+sa+(fm>0?fm*d:0)+Math.round(r*gw);
+    if((r-co)/2>=mt){be=c;break}
+  }
+  // cost per client
+  const directPerClient=Math.round((edCost/cl)+(fmCost/cl)+(cm/cl));
+  const contribPerClient=tk-directPerClient-Math.round(tk*gw);
+  // LTV
+  const ltv=tk*6;
+  // gross margin per client
+  const gmPct=tk>0?((tk-directPerClient-Math.round(tk*gw))/tk*100):0;
+  // operating breakeven (clients to cover fixed costs only)
+  const opBe=contribPerClient>0?(fixedCosts-fmCost-gwCost)/ (tk-Math.round(es/ec*vd)-Math.round(cm/cl>0?cm/cl:0)-Math.round(tk*gw)):0;
 
-KÊLZ[ÌKÊ[ÌJL
-_IH0­ÈXZÙ][	ÛKKÑ^Y
-J_HÛY[\ØXZÙ][	ÛKOMLÉÚ[[Ø[XIÎKKÑ^Y
-JJÉÈÛY[\ÉßH0­ÈÜÚ[Û\ÎÝX\XÚÙ]pè\ÈÛY[\ËÈ]Z]\ÛÜÝÜØÂBËÈTÑUÂ[Ý[ÛÙ]
-^ÂÛÛÝ^ÂX[ØÛKÎML]\ÎLXÎKÛNNÝØNMLÜLÝÎË_K\ÙNØÛÎ]L\ÎLXÎKÛNNMLÝØNÍLÌÜÝÎË_KÜÝÎØÛMKÎL]L\ÎLXÎKÛNNMLÝMLØNÍLÌÜÝÎË_K[ØÛÌÎL]Ì\ÎMXÎKÛNLNÝLØNLÌÜÝÎË_KVÛNÂ	
-	ÜËXÛ	ÊK[YO\ÛÉ
-	ÜË]ÉÊK[YO\ÎÉ
-	ÜË]	ÊK[YO\É
-	ÜË[]	ÊK[YO\]Â	
-	ÜËY\ÉÊK[YO\\ÎÉ
-	ÜËYXÉÊK[YO\XÎÉ
-	ÜËXÛIÊK[YO\ÛNÉ
-	ÜËYIÊK[YO\NÂ	
-	ÜË\Ý	ÊK[YO\ÝÉ
-	ÜË\ØIÊK[YO\ØNÉ
-	ÜË[	ÊK[YO\É
-	ÜË\Ü	ÊK[YO\ÜÉ
-	ÜËYÝÉÊK[YO\ÝÎÂØÝ[Y[]Y\TÙ[XÝÜ[
-	ËÊKÜXXÚ
-OÛ\ÜÓ\ÝÙÙÛJ	ØXÝ	Ë^ÛÛ[ÓÝÙ\Ø\ÙJ
-K[ÛY\ÊOOIÛX[ÏÉÛX[ÎOOIØ\ÙIÏÉØ\ÙIÎOOIÙÜÝÉÏÉØÜXÚ[ZY[ÉÎOOIÙ[	ÏÉÙ\ØØ[IÎÉÊJJNÂ
-NÂBËÈUPS[Ý[Û
-^ØÛÛÝÏ[]È[\ÙXÝ[ÛØÙ\\OOKÜXXÚ
-OÚY\Ò[\ÙXÝ[Ê^\Ù]Û\ÜÓ\ÝY
-	Ý\ÚXIÊ_JKÝ\ÚÛÛÝX\Ú[ÌLÌ	ßJNÙØÝ[Y[]Y\TÙ[XÝÜ[
-	ËÊKÜXXÚ
-[OËØÙ\J[
-J_JJ
-NÂËÈU[Ý[Û
-^ØÛÛÝÏYØÝ[Y[]Y\TÙ[XÝÜ[
-	ËÙXÉÊKYØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë][[ÜÈIÊNØÛÛÝÏ[]È[\ÙXÝ[ÛØÙ\\OOKÜXXÚ
-OÚY\Ò[\ÙXÝ[Ê^ÛÜXXÚ
-OOKÛ\ÜÓ\Ý[[ÝJ	ØXÝ]IÊJNØÛÛÝOYØÝ[Y[]Y\TÙ[XÝÜ	Ë][[ÜÈVÚYHÉÊÞ\Ù]Y
-ÉÈIÊNÚYJXKÛ\ÜÓ\ÝY
-	ØXÝ]IÊ__JKÝ\ÚÛ_JNÜËÜXXÚ
-OËØÙ\J
-J_JJ
-NÂÙ]
-	Ø\ÙIÊNÂÜØÜ\ØÙOÚ[
+  return{rev,tvd,eds,edCost,fmCost,gwCost,fixedCosts,varCosts,totalCosts,net,pc,margin,
+    days,recH,revH,totH,util,be,directPerClient,contribPerClient,ltv,gmPct,opBe}
+}
+
+function R(){
+  const i=I();
+  const m=M(i.cl,i.tk,i.vd,i.mt,i.ed,i.es,i.ec,i.cm,i.fm,i.st,i.sa,i.gw);
+  // displays
+  $('d-cl').textContent=i.cl;$('d-tk').textContent='$'+F(i.tk);$('d-vd').textContent=i.vd;
+  $('d-mt').textContent='$'+F(i.mt);$('d-es').textContent='$'+F(i.es);$('d-ec').textContent=i.ec;
+  $('d-cm').textContent=i.cm?'$'+F(i.cm):'Sin CM';$('d-fm').textContent=i.fm?'$'+F(i.fm):'$0 (tú grabas)';
+  $('d-st').textContent='$'+F(i.st);$('d-sa').textContent='$'+F(i.sa);
+  $('d-lp').textContent='$'+F(i.lp);$('d-sp').textContent='$'+F(i.sp);$('d-gw').textContent=i.gw*100+'%';
+  $('d-ed').textContent=m.eds;if(!edAuto)$('s-ed').value=i.ed;
+  $('h-st').textContent=i.st===0?'Sin estudio fijo — renta por día':'≈$'+F(Math.round(i.st/Math.max(m.days,1)))+'/día × '+m.days+' días';
+
+  // top results
+  $('r-rev').textContent=FK(m.rev);$('r-rev-s').textContent=i.cl+'×$'+F(i.tk);
+  $('r-fix').textContent=FK(m.fixedCosts);$('r-var').textContent=FK(m.varCosts);
+  $('r-var-s').textContent=(i.fm>0?'filmmaker + ':'')+'pasarela';
+  $('r-net').textContent=FK(m.net);$('r-net').style.color=m.net>0?'var(--grn)":'var(--red)';
+  $('r-mrg').textContent=m.margin.toFixed(0)+'%';
+  $('r-mrg').style.color=m.margin>=60?'var(--grn)':m.margin>=40?'var(--ylw)':'var(--red)';
+  $('r-mrg-s').textContent=m.margin>=60?'excelente':m.margin>=40?'bueno':'bajo';
+  $('r-be').textContent=m.be>=50?'∞':m.be.toFixed(1);$('r-be').style.color=m.be<=i.cl?'var(--grn)':'var(--red)';
+
+  // crew
+  const cc=m.pc>=i.mt?'var(--grn)':m.pc>=i.mt*.8?'var(--ylw)':'var(--red)';
+  const cd=m.pc-i.mt,cdt=cd>=0?'+$'+F(cd)+' sobre meta':'-$'+F(Math.abs(cd))+' bajo meta';
+  ['cr','pa'].forEach(id=>{$('r-'+id).textContent=FK(m.pc);$('r-'+id).style.color=cc;$('r-'+id+'-s').textContent=cdt;
+    const p=Math.min(m.pc/i.mt*100,150);$('g-'+id).style.width=Math.min(p,100)+'%';$('g-'+id).style.background=cc;$('g-'+id+'-p').textContent=Math.round(p)+'%';$('g-'+id+'-p').style.color=cc});
+
+  $('r-ed').textContent=m.eds;$('r-ed-s').textContent=(edAuto?'auto':'manual')+' · cap '+m.eds*i.ec;
+  $('r-vd').textContent=m.tvd;$('r-dy').textContent=m.days;
+  const uc=m.util<=75?'var(--grn)':m.util<=90?'var(--ylw)':'var(--red)';
+  $('r-ut').textContent=Math.round(m.util)+'%';$('r-ut').style.color=uc;
+  $('r-ut-s').textContent=m.util<=75?'holgado':m.util<=90?'alta':'al límite';
+
+  // status
+  const v=m.pc>=i.mt,ex=m.pc>=i.mt*1.3;
+  $('status').style.borderColor=v?'rgba(34,197,94,.3)':'rgba(239,68,68,.3)';
+  $('status').style.background=v?'linear-gradient(135deg,rgba(34,197,94,.05),rgba(34,197,94,.01))':'linear-gradient(135deg,rgba(239,68,68,.05),rgba(239,68,68,.01))';
+  $('st-t').textContent=ex?'Excelente':v?'Viable':'No viable';$('st-t').style.color=v?'var(--grn)':'var(--red)';
+  $('st-p').innerHTML=v?`Ambos crews ganan <strong>$${F(m.pc)}/mes</strong>. ${m.eds} editor${m.eds>1?'es':''}. ${i.fm>0?'Filmmaker: $'+F(m.fmCost)+'/mes.':''} ${i.cm>0?'CM cubre publicación.':''} Creators: ~${m.totH} hrs/mes.`
+    :`Cada crew ganaría <strong>$${F(m.pc)}/mes</strong> — <strong>$${F(Math.abs(cd))} bajo meta</strong>. Necesitas ${m.be<50?m.be.toFixed(0)+' clientes':'subir ticket'} o reducir costos.`;
+
+  donut(m,i);costs(m,i);pnl(m,i);invest(m,i);unit(m,i);cashflow(m,i);heatmap(i);scale(i);time(m,i);verdict(m,i);
+  document.querySelectorAll('.pb').forEach(t=>t.classList.remove('act'));
+}
+
+function donut(m,i){
+  const items=[
+    {n:'Editor(es) ×'+m.eds,a:m.edCost,c:'#FF3300'},
+    {n:'Filmmaker',a:m.fmCost,c:'#8B5CF6'},
+    {n:'Estudio',a:i.st,c:'#06B6D4'},
+    {n:'Community Mgr',a:i.cm,c:'#3B82F6'},
+    {n:'SaaS fijos',a:i.sa,c:'#F97316'},
+    {n:'Pasarela '+i.gw*100+'%',a:m.gwCost,c:'#EC4899'},
+  ].filter(x=>x.a>0);
+  const t=items.reduce((s,x)=>s+x.a,0);$('dn-t').textContent=FK(t);
+  const r=80,circ=2*Math.PI*r;let off=0,svg='';
+  items.forEach(x=>{const p=x.a/t,d=p*circ,g=circ-d;svg+=`<circle cx="100" cy="100" r="${r}" fill="none" stroke="${x.c}" stroke-width="22" stroke-dasharray="${d} ${g}" stroke-dashoffset="${-off}" transform="rotate(-90 100 100)" style="transition:all .5s"/>`;off+=d});
+  $('donut').innerHTML=svg;
+  $('dn-leg').innerHTML=items.map(x=>`<div class="cl-i"><div class="cd" style="background:${x.c}"></div><div class="cn">${x.n}</div><div class="ca">$${F(x.a)}</div><div class="cp">${Math.round(x.a/t*100)}%</div></div>`).join('');
+}
+
+function costs(m,i){
+  const fix=[['Editor(es)',m.edCost],['Community Manager',i.cm],['Estudio',i.st],['SaaS (ManyChat, hosting, etc.)',i.sa]].filter(x=>x[1]>0);
+  const vari=[['Filmmaker ($'+F(i.fm)+'/día × '+m.days+' días)',m.fmCost],['Pasarela ('+i.gw*100+'%)',m.gwCost]].filter(x=>x[1]>0);
+  const row=(label,amt)=>`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px"><span style="color:var(--g400)">${label}</span><span style="font-family:var(--mono);font-weight:500">$${F(amt)}</span></div>`;
+  $('cf-list').innerHTML=fix.map(x=>row(x[0],x[1])).join('')+`<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;font-weight:700;border-top:2px solid var(--g700);margin-top:4px"><span>Total fijos</span><span style="font-family:var(--mono);color:var(--sg)">$${F(m.fixedCosts)}</span></div>`;
+  $('cv-list').innerHTML=vari.map(x=>row(x[0],x[1])).join('')+`<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;font-weight:700;border-top:2px solid var(--g700);margin-top:4px"><span>Total variables</span><span style="font-family:var(--mono);color:var(--org)">$${F(m.varCosts)}</span></div>`;
+}
+
+function pnl(m,i){
+  const fv=v=>typeof v==='number'?(v===0?'':v<0?'-$'+F(Math.abs(v)):'$'+F(v)):v;
+  const rows=[
+    ['Ingresos brutos',m.rev,m.rev*6,m.rev*12,''],
+    ['  Comisión pasarela',-m.gwCost,-m.gwCost*6,-m.gwCost*12,''],
+    ['Ingresos netos',m.rev-m.gwCost,(m.rev-m.gwCost)*6,(m.rev-m.gwCost)*12,'tr-t'],
+    [' ',0,0,0,'sp'],
+    ['Editor(es) ×'+m.eds,-m.edCost,-m.edCost*6,-m.edCost*12,''],
+    ['Filmmaker',-m.fmCost,-m.fmCost*6,-m.fmCost*12,''],
+    ['Community Manager',-i.cm,-i.cm*6,-i.cm*12,''],
+    ['Estudio',-i.st,-i.st*6,-i.st*12,''],
+    ['SaaS / herramientas',-i.sa,-i.sa*6,-i.sa*12,''],
+    ['Total costos op.',-m.totalCosts,-m.totalCosts*6,-m.totalCosts*12,'tr-t'],
+    [' ',0,0,0,'sp'],
+    ['Utilidad operativa',m.net,m.net*6,m.net*12,'tr-p'],
+    ['Margen',m.margin.toFixed(1)+'%','','',''],
+    [' ',0,0,0,'sp'],
+    ['Crew Creators (50%)',m.pc,m.pc*6,m.pc*12,'tr-c'],
+    ['Crew Pato (50%)',m.pc,m.pc*6,m.pc*12,'tr-c'],
+  ];
+  $('pnl-b').innerHTML=rows.map(r=>r[4]==='sp'?'<tr><td colspan="4" style="padding:3px;border:none"></td></tr>':`<tr class="${r[4]}"><td>${r[0]}</td><td>${fv(r[1])}</td><td>${fv(r[2])}</td><td>${fv(r[3])}</td></tr>`).join('');
+}
+
+function invest(m,i){
+  const inv=i.lp+i.sp, perCrew=Math.round(inv/2);
+  const monthlyProfit=m.net; // total net before split — but investment is shared
+  const payback=monthlyProfit>0?(inv/monthlyProfit):99;
+  const roi12=perCrew>0?((m.pc*12-perCrew)/perCrew*100):0;
+  $('i-tot').textContent='$'+F(inv);$('i-pc').textContent='$'+F(perCrew);
+  $('i-pb').textContent=payback<12?payback.toFixed(1):'∞';
+  $('i-pb').style.color=payback<=2?'var(--grn)':payback<=4?'var(--ylw)':'var(--red)';
+  $('i-pb-s').textContent=payback<=1?'se recupera el primer mes':payback<=3?'recuperación rápida':'recuperación lenta';
+  $('i-roi').textContent=roi12>0?Math.round(roi12)+'%':'N/A';
+  $('i-roi').style.color=roi12>=200?'var(--grn)':roi12>=50?'var(--ylw)':'var(--red)';
+
+  // amortization chart
+  const ramp=[.4,.6,.8,1,1,1,1,1,1,1,1,1];
+  let accum=-inv,html='';
+  const vals=ramp.map((p,idx)=>{const r=m.rev*p,c=m.totalCosts*(p<1?.7+p*.3:1),prof=r-c;accum+=prof;return{r,c,prof,accum}});
+  const maxA=Math.max(...vals.map(v=>Math.abs(v.accum)),inv);
+  vals.forEach((v,idx)=>{
+    const h=Math.abs(v.accum)/maxA*85;
+    const col=v.accum>=0?'var(--grn)':'var(--sg)';
+    html+=`<div class="bg"><div class="bv" style="font-size:8px;color:${col}">${FK(v.accum)}</div><div class="br" style="height:${Math.max(h,3)}%;background:${col}"></div><div class="bl">M${idx+1}</div></div>`;
+  });
+  $('amort-chart').innerHTML=html;
+}
+
+function unit(m,i){
+  const ltv=i.tk*6;$('u-ltv').textContent=FK(ltv);
+  $('u-cac').textContent='$0';$('u-rat').textContent='∞';
+  $('u-gm').textContent=m.gmPct.toFixed(0)+'%';$('u-gm').style.color=m.gmPct>=60?'var(--grn)':m.gmPct>=40?'var(--ylw)':'var(--red)';
+  $('u-csc').textContent='$'+F(m.directPerClient);
+  $('u-csc-s').textContent='editor'+(i.fm>0?' + filmmaker':'')+(i.cm>0?' + CM':'')+ ' prorrateado';
+  $('u-con').textContent='$'+F(m.contribPerClient);
+  $('u-con').style.color=m.contribPerClient>0?'var(--grn)':'var(--red)';
+
+  // Clients to cover fixed overhead (studio + saas only, since editor/fm/cm scale)
+  const fixedOverhead=i.st+i.sa;
+  const covClients=m.contribPerClient>0?(fixedOverhead/m.contribPerClient):99;
+  $('u-cov').textContent=covClients<50?covClients.toFixed(1):'∞';
+  $('u-cov').style.color=covClients<=i.cl?'var(--grn)':'var(--red)';
+  $('u-cov-s').textContent='clientes para cubrir fijos ($'+F(fixedOverhead)+')';
+
+  $('u-eb').textContent=m.margin.toFixed(0)+'%';$('u-eb').style.color=m.margin>=40?'var(--grn)':'var(--red)';
+  const r40=100+m.margin;$('u-r40').textContent=Math.round(r40);
+  $('u-r40').style.color=r40>=40?'var(--grn)':'var(--red)';
+  $('u-r40-s').textContent=r40>=100?'excepcional':r40>=40?'saludable':'mejorar';
+  $('u-gr').textContent='100%';
+}
+
+function cashflow(m,i){
+  const ramp=[.4,.6,.8,1,1,1,1,1,1,1,1,1];
+  const inv=i.lp+i.sp;
+  let accum=-inv,html='';
+  const data=[];
+  ramp.forEach((p,idx)=>{
+    const cl=Math.round(i.cl*p);
+    const r=cl*i.tk;
+    const mm=M(cl,i.tk,i.vd,i.mt,i.ed,i.es,i.ec,i.cm,i.fm,i.st,i.sa,i.gw);
+    const prof=mm.net;
+    accum+=prof;
+    data.push({cl,r,c:mm.totalCosts,prof,accum});
+    const acCol=accum>=0?'color:var(--grn(':'color:var(--red)';
+    html+=`<tr><td>Mes ${idx+1}</td><td>${cl}</td><td>$${F(r)}</td><td style="color:var(--red)">-$${F(mm.totalCosts)}</td><td style="color:${prof>=0?'var(--grn)':'var(--red)'}">$${F(prof)}</td><td style="${acCol};font-weight:600">${accum>=0?'':''}$${F(accum)}</td></tr>`;
+  });
+  // Add investment row at top
+  $('cf-b').innerHTML=`<tr style="background:rgba(255,51,0,.05)"><td>Inversión</td><td>—</td><td>—</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red);font-weight:600">-$${F(inv)}</td></tr>`+html;
+
+  // chart
+  const maxA=Math.max(...data.map(d=>Math.abs(d.accum)),inv);
+  $('cf-chart').innerHTML=data.map((d,idx)=>{
+    const h=Math.abs(d.accum)/maxA*85;
+    const col=d.accum>=0?'var(--grn)':'var(--sg)';
+    return`<div class="bg"><div class="bv" style="font-size:8px;color:${col}">${FK(d.accum)}</div><div class="br" style="height:${Math.max(h,3)}%;background:${col}"></div><div class="bl">M${idx+1}</div></div>`;
+  }).join('');
+}
+
+function heatmap(i){
+  const tks=[12000,15000,18000,20000,22000,25000,30000,35000];
+  const cls=[5,6,7,8,10,12,15,20,25,30];
+  $('hm-b').innerHTML=cls.map(c=>{
+    return'<tr><td class="rl">'+c+' cl.</td>'+tks.map(t=>{
+      const mm=M(c,t,i.vd,i.mt,i.ed,i.es,i.ec,i.cm,i.fm,i.st,i.sa,i.gw);
+      const pc=mm.pc;let bg,co;
+      if(pc>=i.mt*1.3){bg='rgba(34,197,94,.25)';co='#4ade80'}
+      else if(pc>=i.mt){bg='rgba(34,197,94,.12)';co='#86efac'}
+      else if(pc>=i.mt*.7){bg='rgba(251,191,36,.12)';co='#fcd34d'}
+      else if(pc>=0){bg='rgba(239,68,68,.12)';co='#fca5a5'}
+      else{bg='rgba(239,68,68,.25)';co='#f87171'}
+      return`<td style="background:${bg};color:${co}">$${F(Math.round(pc/1000))}K</td>`;
+    }).join('')+'</tr>';
+  }).join('');
+}
+
+function scale(i){
+  const ns=[5,8,10,15,20,25,30,35];
+  const rows=[
+    {l:'Revenue',f:m=>FK(m.rev)},
+    {l:'Videos/mes',f:m=>m.tvd},
+    {l:'Editores',f:m=>m.eds},
+    {l:'Filmmaker/mes',f:m=>FK(m.fmCost)},
+    {l:'Costos totales',f:m=>FK(m.totalCosts),c:'tr-t'},
+    {l:'Por crew',f:m=>FK(m.pc),c:'tr-c'},
+    {l:'Margen',f:m=>m.margin.toFixed(0)+'%'},
+    {l:'Días estudio',f:m=>m.days},
+    {l:'$/hora',f:m=>'$'+F(m.totH>0?Math.round(m.pc/m.totH):0)},
+  ];
+  $('sc-b').innerHTML=rows.map(r=>'<tr class="'+(r.c||'')+'"><td>'+r.l+'</td>'+ns.map(n=>{
+    const mm=M(n,i.tk,i.vd,i.mt,i.ed,i.es,i.ec,i.cm,i.fm,i.st,i.sa,i.gw);
+    return'<td>'+r.f(mm)+'</td>';}).join('')+'</tr>').join('');
+
+  // chart
+  const models=ns.map(n=>M(n,i.tk,i.vd,i.mt,i.ed,i.es,i.ec,i.cm,i.fm,i.st,i.sa,i.gw));
+  const mx=Math.max(...models.map(m=>m.rev));
+  $('sc-ch').innerHTML=ns.map((n,idx)=>{
+    const mm=models[idx];
+    const rH=mm.rev/mx*85,cH=Math.max(mm.pc/mx*85,2),coH=Math.max(mm.totalCosts/mx*85,2);
+    return`<div class="bg"><div class="bv" style="font-size:8px">${FK(mm.pc)}/cr</div><div style="display:flex;gap:2px;align-items:flex-end;width:100%;flex:1"><div class="br" style="height:${rH}%;background:var(--sg);flex:1"></div><div class="br" style="height:${Math.max(cH,2)}%;background:${mm.pc>=i.mt?'var(--grn)':'var(--red)'};flex:1"></div><div class="br" style="height:${coH}%;background:var(--pur);flex:1;opacity:.6"></div></div><div class="bl">${n}</div></div>`;
+  }).join('');
+}
+
+function time(m,i){
+  const crewGrabs=i.fm===0;
+  $('ti-dy').textContent=crewGrabs?m.days:'0';
+  $('ti-dy').style.color=crewGrabs?'var(--sg)':'var(--grn)';
+  const hrs=crewGrabs?m.totH:m.revH;
+  $('ti-hr').textContent=hrs;
+  const ph=hrs>0?Math.round(m.pc/hrs):0;
+  $('ti-ph').textContent='$'+F(ph);
+  $('ti-fr').textContent=30-(crewGrabs?m.days:0);
+  $('ti-fm-h').textContent=m.revH;
+  $('ti-nf-d').textContent=m.days;$('ti-nf-h').textContent=m.totH;
+  $('ti-nf-sv').textContent=F(m.fmCost);
+  $('ti-dy-s').textContent=crewGrabs?m.days+' días en estudio':'filmmaker graba';
+}
+
+function verdict(m,i){
+  const v=m.pc>=i.mt,ex=m.pc>=i.mt*1.5;
+  const vb=$('fv');
+  vb.style.borderColor=v?'rgba(34,197,94,.3)':'rgba(239,68,68,.3)';
+  vb.style.background=v?'linear-gradient(135deg,rgba(34,197,94,.05),rgba(34,197,94,.01))':'linear-gradient(135deg,rgba(239,68,68,.05),rgba(239,68,68,.01))';
+  $('fv-t').textContent=ex?'Muy viable.':v?'Sí, es viable.':'No viable con estos números.';
+  $('fv-t').style.color=v?'var(--grn)':'var(--red)';
+
+  const inv=i.lp+i.sp,payback=m.net>0?(inv/m.net):99;
+  const crewGrabs=i.fm===0,hrs=crewGrabs?m.totH:m.revH,ph=hrs>0?Math.round(m.pc/hrs):0;
+
+  $('fv-p').innerHTML=v
+    ?`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew gana <strong>$${F(m.pc)}/mes</strong>. Inversión inicial de <strong>$${F(inv)}</strong> se recupera en <strong>${payback.toFixed(1)} meses</strong>. ${i.fm>0?'Filmmaker cuesta $'+F(m.fmCost)+'/mes pero libera a Creators del estudio.':'Creators graba '+m.days+' días/mes.'} ${i.cm>0?'CM ($'+F(i.cm)+') cubre publicación.':''} Margen: <strong>${m.margin.toFixed(0)}%</strong>. LTV por cliente: <strong>$${F(i.tk*6)}</strong> (6 meses).`
+    :`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew ganaría solo <strong>$${F(m.pc)}/mes</strong>. Faltan <strong>$${F(i.mt-m.pc)}</strong> para la meta. ${m.be<50?'Necesitas '+m.be.toFixed(0)+' clientes':'Sube el ticket'} o reduce costos${i.fm>0?' (ej: quitar filmmaker ahorra $'+F(m.fmCost)+')':''}.`;
+
+  $('fv-h').textContent=v
+    ?`$/hora: $${F(ph)} · Payback inversión: ${payback.toFixed(1)} meses · ROI año 1: ${Math.round((m.pc*12-inv/2)/(inv/2)*100)}% · Breakeven: ${m.be.toFixed(1)} clientes`
+    :`Breakeven: ${m.be>=50?'inalcanzable':m.be.toFixed(1)+' clientes'} · Opciones: subir ticket, más clientes, o quitar costos`;
+}
+
+// PRESETS
+function setP(n){
+  const p={
+    lean:  {cl:5,tk:15000,vd:8,mt:40000,es:10000,ec:65,cm:0,fm:0,st:0,sa:2000,lp:15000,sp:10000,gw:3.5},
+    base:  {cl:8,tk:20000,vd:8,mt:50000,es:12000,ec:65,cm:8000,fm:5500,st:8000,sa:3500,lp:30000,sp:20000,gw:3.5},
+    grow:  {cl:15,tk:20000,vd:10,mt:50000,es:12000,ec:65,cm:8000,fm:5500,st:15000,sa:3500,lp:30000,sp:20000,gw:3.5},
+    full:  {cl:30,tk:22000,vd:10,mt:70000,es:14000,ec:65,cm:12000,fm:6000,st:25000,sa:5000,lp:30000,sp:20000,gw:3.5},
+  }[n];
+  $('s-cl').value=p.cl;$('s-tk').value=p.tk;$('s-vd').value=p.vd;$('s-mt').value=p.mt;
+  $('s-es').value=p.es;$('s-ec').value=p.ec;$('s-cm').value=p.cm;$('s-fm').value=p.fm;
+  $('s-st').value=p.st;$('s-sa').value=p.sa;$('s-lp').value=p.lp;$('s-sp').value=p.sp;$('s-gw').value=p.gw;
+  document.querySelectorAll('.pb').forEach(t=>t.classList.toggle('act',t.textContent.toLowerCase().includes(n==='lean'?'lean':n==='base'?'base':n==='grow'?'crecimiento':n==='full'?'escala':'')));
+  R();
+}
+
+// REVEAL
+(function(){const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv').forEach(el=>o.observe(el))})();
+// NAV
+(function(){const s=document.querySelectorAll('.sec'),l=document.querySelectorAll('.nav-links a');const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){l.forEach(a=>a.classList.remove('active'));const a=document.querySelector('.nav-links a[href="#'+x.target.id+'"]');if(a)a.classList.add('active')}}),{threshold:.25});s.forEach(x=>o.observe(x))})();
+
+setP('base');
+</script>
+</body>
+</html>
