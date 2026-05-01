@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSTOP Content Studio — Modelo Financiero Completo</title>
+<title>FSTOP Content Studio &#8212; Modelo Financiero Completo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -173,7 +173,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
     <a href="#calc">Calculadora</a>
     <a href="#costs">Costos</a>
     <a href="#pnl">P&L</a>
-    <a href="#invest">Inversión</a>
+    <a href="#invest">Inversi&#243;n</a>
     <a href="#unit">Unit Economics</a>
     <a href="#cash">Cash Flow</a>
     <a href="#heat">Heatmap</a>
@@ -183,14 +183,14 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </nav>
 
-<!-- ═══ 1. CALCULADORA ═══ -->
+<!-- &#9552;&#9552;&#9552; 1. CALCULADORA &#9552;&#9552;&#9552; -->
 <section class="sec" id="calc">
-  <div class="eye rv">01 — Modelo Financiero Completo</div>
+  <div class="eye rv">01 &#8212; Modelo Financiero Completo</div>
   <h1 class="rv rv-1">La calculadora definitiva<br>de <span class="a">FSTOP Studio.</span></h1>
-  <p class="lead rv rv-2">Todas las variables reales de una agencia de contenido: equipo, estudio, SaaS, inversión inicial, filmmaker, community manager. Mueve cualquier slider y todo se recalcula al instante.</p>
+  <p class="lead rv rv-2">Todas las variables reales de una agencia de contenido: equipo, estudio, SaaS, inversi&#243;n inicial, filmmaker, community manager. Mueve cualquier slider y todo se recalcula al instante.</p>
 
   <div class="pt rv rv-3">
-    <button class="pb" onclick="setP('lean')">Lean (mínimo)</button>
+    <button class="pb" onclick="setP('lean')">Lean (m&#237;nimo)</button>
     <button class="pb act" onclick="setP('base')">Base (arranque)</button>
     <button class="pb" onclick="setP('grow')">Crecimiento</button>
     <button class="pb" onclick="setP('full')">Escala completa</button>
@@ -220,30 +220,30 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
           <input type="range" id="s-es" min="6000" max="25000" step="500" value="12000" oninput="R()"><div class="sm"><span>$6K</span><span>$12K</span><span>$18K</span><span>$25K</span></div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Capacidad editor (vids/mes)</span><span class="sv p" id="d-ec">65</span></div>
           <input type="range" id="s-ec" min="40" max="100" step="5" value="65" oninput="R()"><div class="sm"><span>40</span><span>60</span><span>80</span><span>100</span></div>
-          <div class="hint">Talking head sencillo: 60–70 realista</div></div>
+          <div class="hint">Talking head sencillo: 60&#8211;70 realista</div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Community Manager</span><span class="sv p" id="d-cm">$8,000</span></div>
           <input type="range" id="s-cm" min="0" max="18000" step="500" value="8000" oninput="R()"><div class="sm"><span>$0</span><span>$5K</span><span>$8K</span><span>$12K</span><span>$18K</span></div>
-          <div class="hint">Publicación, copys, programación</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">Filmmaker / día</span><span class="sv p" id="d-fm">$5,500</span></div>
+          <div class="hint">Publicaci&#243;n, copys, programaci&#243;n</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Filmmaker / d&#237;a</span><span class="sv p" id="d-fm">$5,500</span></div>
           <input type="range" id="s-fm" min="0" max="10000" step="500" value="5500" oninput="R()"><div class="sm"><span>$0</span><span>$3K</span><span>$5.5K</span><span>$8K</span><span>$10K</span></div>
-          <div class="hint">$0 = Creators graba. Graba 2 clientes/día</div></div>
+          <div class="hint">$0 = Creators graba. Graba 2 clientes/d&#237;a</div></div>
       </div>
       <!-- COL 3: INFRAESTRUCTURA -->
       <div>
         <div class="col-label" style="color:var(--cyn)">Infraestructura</div>
         <div class="sg"><div class="sh-r"><span class="sl">Renta estudio / mes</span><span class="sv p" id="d-st">$8,000</span></div>
           <input type="range" id="s-st" min="0" max="50000" step="500" value="8000" oninput="R()"><div class="sm"><span>$0</span><span>$10K</span><span>$20K</span><span>$35K</span><span>$50K</span></div>
-          <div class="hint" id="h-st">$0 = renta por día</div></div>
+          <div class="hint" id="h-st">$0 = renta por d&#237;a</div></div>
         <div class="sg"><div class="sh-r"><span class="sl">Costos fijos SaaS</span><span class="sv p" id="d-sa">$3,500</span></div>
           <input type="range" id="s-sa" min="1000" max="10000" step="500" value="3500" oninput="R()"><div class="sm"><span>$1K</span><span>$3.5K</span><span>$6K</span><span>$10K</span></div>
           <div class="hint">ManyChat, hosting, dominio, Notion, Drive, etc.</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">Inversión landing page</span><span class="sv p" id="d-lp">$30,000</span></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Inversi&#243;n landing page</span><span class="sv p" id="d-lp">$30,000</span></div>
           <input type="range" id="s-lp" min="5000" max="80000" step="5000" value="30000" oninput="R()"><div class="sm"><span>$5K</span><span>$20K</span><span>$40K</span><span>$60K</span><span>$80K</span></div>
-          <div class="hint">Inversión única — se reparte entre crews</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">Adecuación de espacio</span><span class="sv p" id="d-sp">$20,000</span></div>
+          <div class="hint">Inversi&#243;n &#250;nica &#8212; se reparte entre crews</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Adecuaci&#243;n de espacio</span><span class="sv p" id="d-sp">$20,000</span></div>
           <input type="range" id="s-sp" min="0" max="60000" step="5000" value="20000" oninput="R()"><div class="sm"><span>$0</span><span>$15K</span><span>$30K</span><span>$45K</span><span>$60K</span></div>
-          <div class="hint">Inversión única — equipo, iluminación, set</div></div>
-        <div class="sg"><div class="sh-r"><span class="sl">Comisión pasarela (%)</span><span class="sv p" id="d-gw">3.5%</span></div>
+          <div class="hint">Inversi&#243;n &#250;nica &#8212; equipo, iluminaci&#243;n, set</div></div>
+        <div class="sg"><div class="sh-r"><span class="sl">Comisi&#243;n pasarela (%)</span><span class="sv p" id="d-gw">3.5%</span></div>
           <input type="range" id="s-gw" min="2" max="6" step="0.5" value="3.5" oninput="R()"><div class="sm"><span>2%</span><span>3.5%</span><span>5%</span><span>6%</span></div></div>
       </div>
     </div>
@@ -252,12 +252,12 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   <!-- RESULTS -->
   <div style="margin-top:20px">
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px" id="top-results">
-      <div class="rc hi"><div class="rl">Revenue</div><div class="rr" id="r-rev" style="color:var(--wh)">$160K</div><div class="rs" id="r-rev-s">8×$20K</div></div>
+      <div class="rc hi"><div class="rl">Revenue</div><div class="rr" id="r-rev" style="color:var(--wh)">$160K</div><div class="rs" id="r-rev-s">8&#215;$20K</div></div>
       <div class="rc"><div class="rl">Costos fijos</div><div class="rr" id="r-fix" style="color:var(--red);font-size:22px">$35K</div><div class="rs">mensuales</div></div>
       <div class="rc"><div class="rl">Costos variables</div><div class="rr" id="r-var" style="color:var(--org);font-size:22px">$27K</div><div class="rs" id="r-var-s">filmmaker + pasarela</div></div>
       <div class="rc"><div class="rl">Neto a repartir</div><div class="rr" id="r-net" style="color:var(--grn)">$98K</div><div class="rs">50/50</div></div>
       <div class="rc"><div class="rl">Margen</div><div class="rr" id="r-mrg" style="color:var(--cyn)">61%</div><div class="rs" id="r-mrg-s">bueno</div></div>
-      <div class="rc"><div class="rl">Breakeven</div><div class="rr" id="r-be">5.8</div><div class="rs">clientes mín.</div></div>
+      <div class="rc"><div class="rl">Breakeven</div><div class="rr" id="r-be">5.8</div><div class="rs">clientes m&#237;n.</div></div>
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
@@ -277,7 +277,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
       <div class="rc"><div class="rl">Editores</div><div class="rr w" id="r-ed" style="font-size:24px">1</div><div class="rs" id="r-ed-s">auto</div></div>
       <div class="rc"><div class="rl">Videos/mes</div><div class="rr w" id="r-vd" style="font-size:24px">64</div><div class="rs">/mes total</div></div>
       <div class="rc"><div class="rl">Util. editor</div><div class="rr" id="r-ut" style="font-size:24px">98%</div><div class="rs" id="r-ut-s">alta</div></div>
-      <div class="rc"><div class="rl">Días estudio</div><div class="rr w" id="r-dy" style="font-size:24px">4</div><div class="rs" id="r-dy-s">2 cl/día</div></div>
+      <div class="rc"><div class="rl">D&#237;as estudio</div><div class="rr w" id="r-dy" style="font-size:24px">4</div><div class="rs" id="r-dy-s">2 cl/d&#237;a</div></div>
     </div>
   </div>
 
@@ -286,9 +286,9 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </section>
 
-<!-- ═══ 2. COSTOS ═══ -->
+<!-- &#9552;&#9552;&#9552; 2. COSTOS &#9552;&#9552;&#9552; -->
 <section class="sec" id="costs">
-  <div class="eye rv">02 — Desglose de Costos</div>
+  <div class="eye rv">02 &#8212; Desglose de Costos</div>
   <h1 class="rv rv-1">Cada peso<br><span class="a">contado.</span></h1>
   <div class="c rv rv-2">
     <div class="cb">
@@ -310,57 +310,57 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   </div>
 </section>
 
-<!-- ═══ 3. P&L ═══ -->
+<!-- &#9552;&#9552;&#9552; 3. P&L &#9552;&#9552;&#9552; -->
 <section class="sec" id="pnl">
-  <div class="eye rv">03 — Estado de Resultados</div>
+  <div class="eye rv">03 &#8212; Estado de Resultados</div>
   <h1 class="rv rv-1">P&L mensual,<br>semestral, <span class="a">anual.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
     <table class="tb"><thead><tr><th>Concepto</th><th>Mensual</th><th>6 meses</th><th>12 meses</th></tr></thead><tbody id="pnl-b"></tbody></table>
   </div>
 </section>
 
-<!-- ═══ 4. INVERSIÓN INICIAL ═══ -->
+<!-- &#9552;&#9552;&#9552; 4. INVERSI&#211;N INICIAL &#9552;&#9552;&#9552; -->
 <section class="sec" id="invest">
-  <div class="eye rv">04 — Inversión Inicial & Payback</div>
-  <h1 class="rv rv-1">¿En cuánto tiempo<br>recuperas la <span class="a">inversión?</span></h1>
-  <p class="lead rv rv-2">Landing page + adecuación de espacio = inversión única que se reparte 50/50 entre ambos crews.</p>
+  <div class="eye rv">04 &#8212; Inversi&#243;n Inicial & Payback</div>
+  <h1 class="rv rv-1">&#191;En cu&#225;nto tiempo<br>recuperas la <span class="a">inversi&#243;n?</span></h1>
+  <p class="lead rv rv-2">Landing page + adecuaci&#243;n de espacio = inversi&#243;n &#250;nica que se reparte 50/50 entre ambos crews.</p>
 
   <div class="g g4 rv rv-3">
-    <div class="c c-a" style="text-align:center"><div class="cl">Inversión total</div><div class="cv" id="i-tot">$50,000</div><div class="cs">landing + espacio</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">Inversi&#243;n total</div><div class="cv" id="i-tot">$50,000</div><div class="cs">landing + espacio</div></div>
     <div class="c c-a" style="text-align:center"><div class="cl">Por crew (50%)</div><div class="cv w" id="i-pc">$25,000</div><div class="cs">cada uno pone</div></div>
     <div class="c c-a" style="text-align:center"><div class="cl">Payback</div><div class="cv gn" id="i-pb">0.5</div><div class="cs" id="i-pb-s">meses para recuperar</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">ROI año 1</div><div class="cv gn" id="i-roi">2,300%</div><div class="cs">retorno sobre inversión</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">ROI a&#241;o 1</div><div class="cv gn" id="i-roi">2,300%</div><div class="cs">retorno sobre inversi&#243;n</div></div>
   </div>
 
   <div class="sep"></div>
-  <h2 class="sh rv">Amortización mes a mes</h2>
+  <h2 class="sh rv">Amortizaci&#243;n mes a mes</h2>
   <div class="c rv" style="padding:20px">
     <div id="amort-chart" class="bc" style="height:180px"></div>
     <div style="display:flex;gap:16px;margin-top:10px;justify-content:center">
-      <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--sg);display:inline-block"></span> Inversión restante</span>
+      <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--sg);display:inline-block"></span> Inversi&#243;n restante</span>
       <span style="font-size:10px;color:var(--g400);display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:var(--grn);display:inline-block"></span> Profit acumulado</span>
     </div>
   </div>
 </section>
 
-<!-- ═══ 5. UNIT ECONOMICS ═══ -->
+<!-- &#9552;&#9552;&#9552; 5. UNIT ECONOMICS &#9552;&#9552;&#9552; -->
 <section class="sec" id="unit">
-  <div class="eye rv">05 — Unit Economics (CFO View)</div>
-  <h1 class="rv rv-1">LTV, CAC, payback<br>y <span class="a">márgenes.</span></h1>
-  <p class="lead rv rv-2">Métricas clave de un CFO para bootstrapped businesses. Cada cliente es una unidad de negocio.</p>
+  <div class="eye rv">05 &#8212; Unit Economics (CFO View)</div>
+  <h1 class="rv rv-1">LTV, CAC, payback<br>y <span class="a">m&#225;rgenes.</span></h1>
+  <p class="lead rv rv-2">M&#233;tricas clave de un CFO para bootstrapped businesses. Cada cliente es una unidad de negocio.</p>
 
   <div class="g g4 rv rv-3">
-    <div class="c c-a" style="text-align:center"><div class="cl">LTV por cliente</div><div class="cv gn" id="u-ltv">$120K</div><div class="cs">6 meses × ticket</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">CAC</div><div class="cv w" id="u-cac">$0</div><div class="cs">orgánico via Pato</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">LTV:CAC</div><div class="cv gn" id="u-rat">∞</div><div class="cs" id="u-rat-s">excelente (meta: ≥3x)</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cl">Gross margin / cliente</div><div class="cv" id="u-gm">72%</div><div class="cs">después de costos directos</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">LTV por cliente</div><div class="cv gn" id="u-ltv">$120K</div><div class="cs">6 meses &#215; ticket</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">CAC</div><div class="cv w" id="u-cac">$0</div><div class="cs">org&#225;nico via Pato</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">LTV:CAC</div><div class="cv gn" id="u-rat">&#8734;</div><div class="cs" id="u-rat-s">excelente (meta: &#8805;3x)</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cl">Gross margin / cliente</div><div class="cv" id="u-gm">72%</div><div class="cs">despu&#233;s de costos directos</div></div>
   </div>
 
   <div class="sep"></div>
 
   <div class="g g3 rv">
     <div class="c" style="text-align:center"><div class="cl">Costo servir 1 cliente / mes</div><div class="cv w" id="u-csc" style="font-size:28px">$5,600</div><div class="cs" id="u-csc-s">editor + filmmaker + CM prorrateado</div></div>
-    <div class="c" style="text-align:center"><div class="cl">Contribución / cliente</div><div class="cv gn" id="u-con" style="font-size:28px">$14,400</div><div class="cs">ticket - costo directo</div></div>
+    <div class="c" style="text-align:center"><div class="cl">Contribuci&#243;n / cliente</div><div class="cv gn" id="u-con" style="font-size:28px">$14,400</div><div class="cs">ticket - costo directo</div></div>
     <div class="c" style="text-align:center"><div class="cl">Clientes para cubrir fijos</div><div class="cv" id="u-cov" style="font-size:28px">2.4</div><div class="cs" id="u-cov-s">punto muerto operativo</div></div>
   </div>
 
@@ -368,20 +368,20 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 
   <h2 class="sh rv">Rule of 40 (adaptado)</h2>
   <div class="c rv">
-    <p style="font-size:13px;color:var(--g400);margin-bottom:12px">Growth % + EBITDA Margin % ≥ 40% = negocio saludable. Para FSTOP en fase 1, el crecimiento viene del ramp-up de clientes.</p>
+    <p style="font-size:13px;color:var(--g400);margin-bottom:12px">Growth % + EBITDA Margin % &#8805; 40% = negocio saludable. Para FSTOP en fase 1, el crecimiento viene del ramp-up de clientes.</p>
     <div class="g g3">
-      <div style="text-align:center"><div class="cl">Crecimiento estimado</div><div class="cv w" id="u-gr" style="font-size:28px">100%</div><div class="cs">de 0 a operación</div></div>
+      <div style="text-align:center"><div class="cl">Crecimiento estimado</div><div class="cv w" id="u-gr" style="font-size:28px">100%</div><div class="cs">de 0 a operaci&#243;n</div></div>
       <div style="text-align:center"><div class="cl">Margen EBITDA</div><div class="cv" id="u-eb" style="font-size:28px">61%</div><div class="cs">margen operativo</div></div>
       <div style="text-align:center"><div class="cl">Score Rule of 40</div><div class="cv gn" id="u-r40" style="font-size:28px">161</div><div class="cs" id="u-r40-s">muy por encima</div></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 6. CASH FLOW 12 MESES ═══ -->
+<!-- &#9552;&#9552;&#9552; 6. CASH FLOW 12 MESES &#9552;&#9552;&#9552; -->
 <section class="sec" id="cash">
-  <div class="eye rv">06 — Cash Flow Proyectado</div>
+  <div class="eye rv">06 &#8212; Cash Flow Proyectado</div>
   <h1 class="rv rv-1">12 meses<br>de <span class="a">flujo.</span></h1>
-  <p class="lead rv rv-2">Proyección con ramp-up gradual: mes 1 al 40%, mes 2 al 60%, mes 3 al 80%, mes 4+ al 100%. Incluye inversión inicial.</p>
+  <p class="lead rv rv-2">Proyecci&#243;n con ramp-up gradual: mes 1 al 40%, mes 2 al 60%, mes 3 al 80%, mes 4+ al 100%. Incluye inversi&#243;n inicial.</p>
   <div class="c rv rv-3" style="overflow-x:auto">
     <table class="tb"><thead><tr><th>Mes</th><th>Clientes</th><th>Revenue</th><th>Costos</th><th>Profit</th><th>Acumulado</th></tr></thead><tbody id="cf-b"></tbody></table>
   </div>
@@ -390,60 +390,60 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
   <div class="c rv" style="padding:20px"><div id="cf-chart" class="bc" style="height:200px"></div></div>
 </section>
 
-<!-- ═══ 7. HEATMAP ═══ -->
+<!-- &#9552;&#9552;&#9552; 7. HEATMAP &#9552;&#9552;&#9552; -->
 <section class="sec" id="heat">
-  <div class="eye rv">07 — Mapa de Rentabilidad</div>
-  <h1 class="rv rv-1">Profit / crew:<br><span class="a">clientes × ticket.</span></h1>
+  <div class="eye rv">07 &#8212; Mapa de Rentabilidad</div>
+  <h1 class="rv rv-1">Profit / crew:<br><span class="a">clientes &#215; ticket.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
     <table class="hm"><thead><tr><th></th><th>$12K</th><th>$15K</th><th>$18K</th><th>$20K</th><th>$22K</th><th>$25K</th><th>$30K</th><th>$35K</th></tr></thead><tbody id="hm-b"></tbody></table>
     <p style="font-family:var(--mono);font-size:8px;color:var(--g600);margin-top:10px;text-align:center">Valores = ganancia por crew (MXN/mes) con costos actuales del panel</p>
   </div>
 </section>
 
-<!-- ═══ 8. ESCALA ═══ -->
+<!-- &#9552;&#9552;&#9552; 8. ESCALA &#9552;&#9552;&#9552; -->
 <section class="sec" id="scale">
-  <div class="eye rv">08 — Proyección de Escala</div>
+  <div class="eye rv">08 &#8212; Proyecci&#243;n de Escala</div>
   <h1 class="rv rv-1">De 5 a 35 clientes.<br>Costos <span class="a">escalonados.</span></h1>
   <div class="c rv rv-2" style="overflow-x:auto">
-    <table class="tb"><thead><tr><th>Métrica</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th></tr></thead><tbody id="sc-b"></tbody></table>
+    <table class="tb"><thead><tr><th>M&#233;trica</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th></tr></thead><tbody id="sc-b"></tbody></table>
   </div>
   <div class="sep"></div>
   <div class="c rv" style="padding:20px"><div id="sc-ch" class="bc" style="height:220px"></div></div>
 </section>
 
-<!-- ═══ 9. TIEMPO ═══ -->
+<!-- &#9552;&#9552;&#9552; 9. TIEMPO &#9552;&#9552;&#9552; -->
 <section class="sec" id="time">
-  <div class="eye rv">09 — Inversión de Tiempo</div>
+  <div class="eye rv">09 &#8212; Inversi&#243;n de Tiempo</div>
   <h1 class="rv rv-1">Tu tiempo<br>es tu <span class="a">activo.</span></h1>
   <div class="g g4 rv rv-2">
-    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-dy">4</div><div class="cl" style="margin-top:6px">Días estudio</div><div class="cs" id="ti-dy-s">si Creators graba</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-hr">18</div><div class="cl" style="margin-top:6px">Hrs totales/mes</div><div class="cs">grabación + revisión</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-dy">4</div><div class="cl" style="margin-top:6px">D&#237;as estudio</div><div class="cs" id="ti-dy-s">si Creators graba</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv" id="ti-hr">18</div><div class="cl" style="margin-top:6px">Hrs totales/mes</div><div class="cs">grabaci&#243;n + revisi&#243;n</div></div>
     <div class="c c-a" style="text-align:center"><div class="cv gn" id="ti-ph">$2,722</div><div class="cl" style="margin-top:6px">$/hora Creators</div><div class="cs">ingreso por hora</div></div>
-    <div class="c c-a" style="text-align:center"><div class="cv w" id="ti-fr">26</div><div class="cl" style="margin-top:6px">Días libres</div><div class="cs">de 30</div></div>
+    <div class="c c-a" style="text-align:center"><div class="cv w" id="ti-fr">26</div><div class="cl" style="margin-top:6px">D&#237;as libres</div><div class="cs">de 30</div></div>
   </div>
   <div class="sep"></div>
   <div class="g g2 rv">
-    <div class="c"><h3 style="font-size:14px;color:var(--pur);margin-bottom:8px">Con filmmaker ($5.5K/día)</h3><p style="font-size:12px;color:var(--g400)">Creators no va al estudio. Solo revisa edición (~<span id="ti-fm-h">6</span> hrs/mes). El filmmaker dirige y graba. <strong>Máxima libertad.</strong></p></div>
-    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:8px">Sin filmmaker (Creators graba)</h3><p style="font-size:12px;color:var(--g400)">Creators va al estudio <span id="ti-nf-d">4</span> días/mes. Total ~<span id="ti-nf-h">18</span> hrs. Ahorras $<span id="ti-nf-sv">22K</span>/mes en filmmaker.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--pur);margin-bottom:8px">Con filmmaker ($5.5K/d&#237;a)</h3><p style="font-size:12px;color:var(--g400)">Creators no va al estudio. Solo revisa edici&#243;n (~<span id="ti-fm-h">6</span> hrs/mes). El filmmaker dirige y graba. <strong>M&#225;xima libertad.</strong></p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:8px">Sin filmmaker (Creators graba)</h3><p style="font-size:12px;color:var(--g400)">Creators va al estudio <span id="ti-nf-d">4</span> d&#237;as/mes. Total ~<span id="ti-nf-h">18</span> hrs. Ahorras $<span id="ti-nf-sv">22K</span>/mes en filmmaker.</p></div>
   </div>
 </section>
 
-<!-- ═══ 10. VEREDICTO ═══ -->
+<!-- &#9552;&#9552;&#9552; 10. VEREDICTO &#9552;&#9552;&#9552; -->
 <section class="sec" id="verdict">
-  <div class="eye rv">10 — Veredicto Final</div>
-  <h1 class="rv rv-1">¿Es <span class="a">viable?</span></h1>
+  <div class="eye rv">10 &#8212; Veredicto Final</div>
+  <h1 class="rv rv-1">&#191;Es <span class="a">viable?</span></h1>
   <div class="vb rv rv-2" id="fv"><h3 id="fv-t"></h3><p id="fv-p"></p><div class="vh" id="fv-h"></div></div>
   <div class="g g3 rv rv-3" style="margin-top:20px">
-    <div class="c"><h3 style="font-size:14px;color:var(--grn);margin-bottom:6px">Fortalezas</h3><p style="font-size:12px;color:var(--g400)">Márgenes altos, CAC orgánico ($0), bajo tiempo de Creators, modelo escalable con editores, inversión inicial baja con payback rápido.</p></div>
-    <div class="c"><h3 style="font-size:14px;color:var(--ylw);margin-bottom:6px">Riesgos</h3><p style="font-size:12px;color:var(--g400)">Dependencia de conversión de Pato, capacidad editor a 65 vids limita a ~8 clientes con 8 vids, retención post-6 meses, filmmaker es costo variable alto.</p></div>
-    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:6px">Próximos pasos</h3><p style="font-size:12px;color:var(--g400)">1. Cotizar 3 estudios por día. 2. Contratar editor + CM. 3. Invertir en landing page + video de venta. 4. Primer batch de 5-8 clientes.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--grn);margin-bottom:6px">Fortalezas</h3><p style="font-size:12px;color:var(--g400)">M&#225;rgenes altos, CAC org&#225;nico ($0), bajo tiempo de Creators, modelo escalable con editores, inversi&#243;n inicial baja con payback r&#225;pido.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--ylw);margin-bottom:6px">Riesgos</h3><p style="font-size:12px;color:var(--g400)">Dependencia de conversi&#243;n de Pato, capacidad editor a 65 vids limita a ~8 clientes con 8 vids, retenci&#243;n post-6 meses, filmmaker es costo variable alto.</p></div>
+    <div class="c"><h3 style="font-size:14px;color:var(--sg);margin-bottom:6px">Pr&#243;ximos pasos</h3><p style="font-size:12px;color:var(--g400)">1. Cotizar 3 estudios por d&#237;a. 2. Contratar editor + CM. 3. Invertir en landing page + video de venta. 4. Primer batch de 5-8 clientes.</p></div>
   </div>
 </section>
 
 <div class="ft">
   <svg viewBox="0 0 100 108" width="28" height="30" style="color:var(--g700);margin-bottom:8px"><circle cx="50" cy="54" r="46" fill="none" stroke="currentColor" stroke-width="4.5"/><circle cx="50" cy="54" r="13.8" fill="currentColor"/><g class="ao"><circle cx="50" cy="5.5" r="5.5" fill="currentColor"/></g></svg>
-  <p>FSTOP Content Studio · Modelo Financiero v3</p>
-  <p style="margin-top:3px">Creators × Pato Ochoa · Abril 2026</p>
+  <p>FSTOP Content Studio &#183; Modelo Financiero v3</p>
+  <p style="margin-top:3px">Creators &#215; Pato Ochoa &#183; Abril 2026</p>
 </div>
 
 <script>
@@ -503,21 +503,21 @@ function R(){
   // displays
   $('d-cl').textContent=i.cl;$('d-tk').textContent='$'+F(i.tk);$('d-vd').textContent=i.vd;
   $('d-mt').textContent='$'+F(i.mt);$('d-es').textContent='$'+F(i.es);$('d-ec').textContent=i.ec;
-  $('d-cm').textContent=i.cm?'$'+F(i.cm):'Sin CM';$('d-fm').textContent=i.fm?'$'+F(i.fm):'$0 (tú grabas)';
+  $('d-cm').textContent=i.cm?'$'+F(i.cm):'Sin CM';$('d-fm').textContent=i.fm?'$'+F(i.fm):'$0 (t\u00fa grabas)';
   $('d-st').textContent='$'+F(i.st);$('d-sa').textContent='$'+F(i.sa);
   $('d-lp').textContent='$'+F(i.lp);$('d-sp').textContent='$'+F(i.sp);$('d-gw').textContent=i.gw*100+'%';
   $('d-ed').textContent=m.eds;if(!edAuto)$('s-ed').value=i.ed;
-  $('h-st').textContent=i.st===0?'Sin estudio fijo — renta por día':'≈$'+F(Math.round(i.st/Math.max(m.days,1)))+'/día × '+m.days+' días';
+  $('h-st').textContent=i.st===0?'Sin estudio fijo \u2014 renta por d\u00eda':'\u2248$'+F(Math.round(i.st/Math.max(m.days,1)))+'/d\u00eda \u00d7 '+m.days+' d\u00edas';
 
   // top results
-  $('r-rev').textContent=FK(m.rev);$('r-rev-s').textContent=i.cl+'×$'+F(i.tk);
+  $('r-rev').textContent=FK(m.rev);$('r-rev-s').textContent=i.cl+'\u00d7$'+F(i.tk);
   $('r-fix').textContent=FK(m.fixedCosts);$('r-var').textContent=FK(m.varCosts);
   $('r-var-s').textContent=(i.fm>0?'filmmaker + ':'')+'pasarela';
-  $('r-net').textContent=FK(m.net);$('r-net').style.color=m.net>0?'var(--grn)":'var(--red)';
+  $('r-net').textContent=FK(m.net);$('r-net').style.color=m.net>0?'var(--grn)':'var(--red)';
   $('r-mrg').textContent=m.margin.toFixed(0)+'%';
   $('r-mrg').style.color=m.margin>=60?'var(--grn)':m.margin>=40?'var(--ylw)':'var(--red)';
   $('r-mrg-s').textContent=m.margin>=60?'excelente':m.margin>=40?'bueno':'bajo';
-  $('r-be').textContent=m.be>=50?'∞':m.be.toFixed(1);$('r-be').style.color=m.be<=i.cl?'var(--grn)':'var(--red)';
+  $('r-be').textContent=m.be>=50?'\u221e':m.be.toFixed(1);$('r-be').style.color=m.be<=i.cl?'var(--grn)':'var(--red)';
 
   // crew
   const cc=m.pc>=i.mt?'var(--grn)':m.pc>=i.mt*.8?'var(--ylw)':'var(--red)';
@@ -525,19 +525,19 @@ function R(){
   ['cr','pa'].forEach(id=>{$('r-'+id).textContent=FK(m.pc);$('r-'+id).style.color=cc;$('r-'+id+'-s').textContent=cdt;
     const p=Math.min(m.pc/i.mt*100,150);$('g-'+id).style.width=Math.min(p,100)+'%';$('g-'+id).style.background=cc;$('g-'+id+'-p').textContent=Math.round(p)+'%';$('g-'+id+'-p').style.color=cc});
 
-  $('r-ed').textContent=m.eds;$('r-ed-s').textContent=(edAuto?'auto':'manual')+' · cap '+m.eds*i.ec;
+  $('r-ed').textContent=m.eds;$('r-ed-s').textContent=(edAuto?'auto':'manual')+' \u00b7 cap '+m.eds*i.ec;
   $('r-vd').textContent=m.tvd;$('r-dy').textContent=m.days;
   const uc=m.util<=75?'var(--grn)':m.util<=90?'var(--ylw)':'var(--red)';
   $('r-ut').textContent=Math.round(m.util)+'%';$('r-ut').style.color=uc;
-  $('r-ut-s').textContent=m.util<=75?'holgado':m.util<=90?'alta':'al límite';
+  $('r-ut-s').textContent=m.util<=75?'holgado':m.util<=90?'alta':'al l\u00edmite';
 
   // status
   const v=m.pc>=i.mt,ex=m.pc>=i.mt*1.3;
   $('status').style.borderColor=v?'rgba(34,197,94,.3)':'rgba(239,68,68,.3)';
   $('status').style.background=v?'linear-gradient(135deg,rgba(34,197,94,.05),rgba(34,197,94,.01))':'linear-gradient(135deg,rgba(239,68,68,.05),rgba(239,68,68,.01))';
   $('st-t').textContent=ex?'Excelente':v?'Viable':'No viable';$('st-t').style.color=v?'var(--grn)':'var(--red)';
-  $('st-p').innerHTML=v?`Ambos crews ganan <strong>$${F(m.pc)}/mes</strong>. ${m.eds} editor${m.eds>1?'es':''}. ${i.fm>0?'Filmmaker: $'+F(m.fmCost)+'/mes.':''} ${i.cm>0?'CM cubre publicación.':''} Creators: ~${m.totH} hrs/mes.`
-    :`Cada crew ganaría <strong>$${F(m.pc)}/mes</strong> — <strong>$${F(Math.abs(cd))} bajo meta</strong>. Necesitas ${m.be<50?m.be.toFixed(0)+' clientes':'subir ticket'} o reducir costos.`;
+  $('st-p').innerHTML=v?`Ambos crews ganan <strong>$${F(m.pc)}/mes</strong>. ${m.eds} editor${m.eds>1?'es':''}. ${i.fm>0?'Filmmaker: $'+F(m.fmCost)+'/mes.':''} ${i.cm>0?'CM cubre publicaci\u00f3n.':''} Creators: ~${m.totH} hrs/mes.`
+    :`Cada crew ganar\u00eda <strong>$${F(m.pc)}/mes</strong> \u2014 <strong>$${F(Math.abs(cd))} bajo meta</strong>. Necesitas ${m.be<50?m.be.toFixed(0)+' clientes':'subir ticket'} o reducir costos.`;
 
   donut(m,i);costs(m,i);pnl(m,i);invest(m,i);unit(m,i);cashflow(m,i);heatmap(i);scale(i);time(m,i);verdict(m,i);
   document.querySelectorAll('.pb').forEach(t=>t.classList.remove('act'));
@@ -545,7 +545,7 @@ function R(){
 
 function donut(m,i){
   const items=[
-    {n:'Editor(es) ×'+m.eds,a:m.edCost,c:'#FF3300'},
+    {n:'Editor(es) \u00d7'+m.eds,a:m.edCost,c:'#FF3300'},
     {n:'Filmmaker',a:m.fmCost,c:'#8B5CF6'},
     {n:'Estudio',a:i.st,c:'#06B6D4'},
     {n:'Community Mgr',a:i.cm,c:'#3B82F6'},
@@ -561,7 +561,7 @@ function donut(m,i){
 
 function costs(m,i){
   const fix=[['Editor(es)',m.edCost],['Community Manager',i.cm],['Estudio',i.st],['SaaS (ManyChat, hosting, etc.)',i.sa]].filter(x=>x[1]>0);
-  const vari=[['Filmmaker ($'+F(i.fm)+'/día × '+m.days+' días)',m.fmCost],['Pasarela ('+i.gw*100+'%)',m.gwCost]].filter(x=>x[1]>0);
+  const vari=[['Filmmaker ($'+F(i.fm)+'/d\u00eda \u00d7 '+m.days+' d\u00edas)',m.fmCost],['Pasarela ('+i.gw*100+'%)',m.gwCost]].filter(x=>x[1]>0);
   const row=(label,amt)=>`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px"><span style="color:var(--g400)">${label}</span><span style="font-family:var(--mono);font-weight:500">$${F(amt)}</span></div>`;
   $('cf-list').innerHTML=fix.map(x=>row(x[0],x[1])).join('')+`<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;font-weight:700;border-top:2px solid var(--g700);margin-top:4px"><span>Total fijos</span><span style="font-family:var(--mono);color:var(--sg)">$${F(m.fixedCosts)}</span></div>`;
   $('cv-list').innerHTML=vari.map(x=>row(x[0],x[1])).join('')+`<div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;font-weight:700;border-top:2px solid var(--g700);margin-top:4px"><span>Total variables</span><span style="font-family:var(--mono);color:var(--org)">$${F(m.varCosts)}</span></div>`;
@@ -571,10 +571,10 @@ function pnl(m,i){
   const fv=v=>typeof v==='number'?(v===0?'':v<0?'-$'+F(Math.abs(v)):'$'+F(v)):v;
   const rows=[
     ['Ingresos brutos',m.rev,m.rev*6,m.rev*12,''],
-    ['  Comisión pasarela',-m.gwCost,-m.gwCost*6,-m.gwCost*12,''],
+    ['  Comisi\u00f3n pasarela',-m.gwCost,-m.gwCost*6,-m.gwCost*12,''],
     ['Ingresos netos',m.rev-m.gwCost,(m.rev-m.gwCost)*6,(m.rev-m.gwCost)*12,'tr-t'],
     [' ',0,0,0,'sp'],
-    ['Editor(es) ×'+m.eds,-m.edCost,-m.edCost*6,-m.edCost*12,''],
+    ['Editor(es) \u00d7'+m.eds,-m.edCost,-m.edCost*6,-m.edCost*12,''],
     ['Filmmaker',-m.fmCost,-m.fmCost*6,-m.fmCost*12,''],
     ['Community Manager',-i.cm,-i.cm*6,-i.cm*12,''],
     ['Estudio',-i.st,-i.st*6,-i.st*12,''],
@@ -592,13 +592,13 @@ function pnl(m,i){
 
 function invest(m,i){
   const inv=i.lp+i.sp, perCrew=Math.round(inv/2);
-  const monthlyProfit=m.net; // total net before split — but investment is shared
+  const monthlyProfit=m.net; // total net before split \u2014 but investment is shared
   const payback=monthlyProfit>0?(inv/monthlyProfit):99;
   const roi12=perCrew>0?((m.pc*12-perCrew)/perCrew*100):0;
   $('i-tot').textContent='$'+F(inv);$('i-pc').textContent='$'+F(perCrew);
-  $('i-pb').textContent=payback<12?payback.toFixed(1):'∞';
+  $('i-pb').textContent=payback<12?payback.toFixed(1):'\u221e';
   $('i-pb').style.color=payback<=2?'var(--grn)':payback<=4?'var(--ylw)':'var(--red)';
-  $('i-pb-s').textContent=payback<=1?'se recupera el primer mes':payback<=3?'recuperación rápida':'recuperación lenta';
+  $('i-pb-s').textContent=payback<=1?'se recupera el primer mes':payback<=3?'recuperaci\u00f3n r\u00e1pida':'recuperaci\u00f3n lenta';
   $('i-roi').textContent=roi12>0?Math.round(roi12)+'%':'N/A';
   $('i-roi').style.color=roi12>=200?'var(--grn)':roi12>=50?'var(--ylw)':'var(--red)';
 
@@ -617,7 +617,7 @@ function invest(m,i){
 
 function unit(m,i){
   const ltv=i.tk*6;$('u-ltv').textContent=FK(ltv);
-  $('u-cac').textContent='$0';$('u-rat').textContent='∞';
+  $('u-cac').textContent='$0';$('u-rat').textContent='\u221e';
   $('u-gm').textContent=m.gmPct.toFixed(0)+'%';$('u-gm').style.color=m.gmPct>=60?'var(--grn)':m.gmPct>=40?'var(--ylw)':'var(--red)';
   $('u-csc').textContent='$'+F(m.directPerClient);
   $('u-csc-s').textContent='editor'+(i.fm>0?' + filmmaker':'')+(i.cm>0?' + CM':'')+ ' prorrateado';
@@ -627,7 +627,7 @@ function unit(m,i){
   // Clients to cover fixed overhead (studio + saas only, since editor/fm/cm scale)
   const fixedOverhead=i.st+i.sa;
   const covClients=m.contribPerClient>0?(fixedOverhead/m.contribPerClient):99;
-  $('u-cov').textContent=covClients<50?covClients.toFixed(1):'∞';
+  $('u-cov').textContent=covClients<50?covClients.toFixed(1):'\u221e';
   $('u-cov').style.color=covClients<=i.cl?'var(--grn)':'var(--red)';
   $('u-cov-s').textContent='clientes para cubrir fijos ($'+F(fixedOverhead)+')';
 
@@ -650,11 +650,11 @@ function cashflow(m,i){
     const prof=mm.net;
     accum+=prof;
     data.push({cl,r,c:mm.totalCosts,prof,accum});
-    const acCol=accum>=0?'color:var(--grn(':'color:var(--red)';
+    const acCol=accum>=0?'color:var(--grn)':'color:var(--red)';
     html+=`<tr><td>Mes ${idx+1}</td><td>${cl}</td><td>$${F(r)}</td><td style="color:var(--red)">-$${F(mm.totalCosts)}</td><td style="color:${prof>=0?'var(--grn)':'var(--red)'}">$${F(prof)}</td><td style="${acCol};font-weight:600">${accum>=0?'':''}$${F(accum)}</td></tr>`;
   });
   // Add investment row at top
-  $('cf-b').innerHTML=`<tr style="background:rgba(255,51,0,.05)"><td>Inversión</td><td>—</td><td>—</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red);font-weight:600">-$${F(inv)}</td></tr>`+html;
+  $('cf-b').innerHTML=`<tr style="background:rgba(255,51,0,.05)"><td>Inversi\u00f3n</td><td>\u2014</td><td>\u2014</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red)">-$${F(inv)}</td><td style="color:var(--red);font-weight:600">-$${F(inv)}</td></tr>`+html;
 
   // chart
   const maxA=Math.max(...data.map(d=>Math.abs(d.accum)),inv);
@@ -692,7 +692,7 @@ function scale(i){
     {l:'Costos totales',f:m=>FK(m.totalCosts),c:'tr-t'},
     {l:'Por crew',f:m=>FK(m.pc),c:'tr-c'},
     {l:'Margen',f:m=>m.margin.toFixed(0)+'%'},
-    {l:'Días estudio',f:m=>m.days},
+    {l:'D\u00edas estudio',f:m=>m.days},
     {l:'$/hora',f:m=>'$'+F(m.totH>0?Math.round(m.pc/m.totH):0)},
   ];
   $('sc-b').innerHTML=rows.map(r=>'<tr class="'+(r.c||'')+'"><td>'+r.l+'</td>'+ns.map(n=>{
@@ -721,7 +721,7 @@ function time(m,i){
   $('ti-fm-h').textContent=m.revH;
   $('ti-nf-d').textContent=m.days;$('ti-nf-h').textContent=m.totH;
   $('ti-nf-sv').textContent=F(m.fmCost);
-  $('ti-dy-s').textContent=crewGrabs?m.days+' días en estudio':'filmmaker graba';
+  $('ti-dy-s').textContent=crewGrabs?m.days+' d\u00edas en estudio':'filmmaker graba';
 }
 
 function verdict(m,i){
@@ -729,19 +729,19 @@ function verdict(m,i){
   const vb=$('fv');
   vb.style.borderColor=v?'rgba(34,197,94,.3)':'rgba(239,68,68,.3)';
   vb.style.background=v?'linear-gradient(135deg,rgba(34,197,94,.05),rgba(34,197,94,.01))':'linear-gradient(135deg,rgba(239,68,68,.05),rgba(239,68,68,.01))';
-  $('fv-t').textContent=ex?'Muy viable.':v?'Sí, es viable.':'No viable con estos números.';
+  $('fv-t').textContent=ex?'Muy viable.':v?'S\u00ed, es viable.':'No viable con estos n\u00fameros.';
   $('fv-t').style.color=v?'var(--grn)':'var(--red)';
 
   const inv=i.lp+i.sp,payback=m.net>0?(inv/m.net):99;
   const crewGrabs=i.fm===0,hrs=crewGrabs?m.totH:m.revH,ph=hrs>0?Math.round(m.pc/hrs):0;
 
   $('fv-p').innerHTML=v
-    ?`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew gana <strong>$${F(m.pc)}/mes</strong>. Inversión inicial de <strong>$${F(inv)}</strong> se recupera en <strong>${payback.toFixed(1)} meses</strong>. ${i.fm>0?'Filmmaker cuesta $'+F(m.fmCost)+'/mes pero libera a Creators del estudio.':'Creators graba '+m.days+' días/mes.'} ${i.cm>0?'CM ($'+F(i.cm)+') cubre publicación.':''} Margen: <strong>${m.margin.toFixed(0)}%</strong>. LTV por cliente: <strong>$${F(i.tk*6)}</strong> (6 meses).`
-    :`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew ganaría solo <strong>$${F(m.pc)}/mes</strong>. Faltan <strong>$${F(i.mt-m.pc)}</strong> para la meta. ${m.be<50?'Necesitas '+m.be.toFixed(0)+' clientes':'Sube el ticket'} o reduce costos${i.fm>0?' (ej: quitar filmmaker ahorra $'+F(m.fmCost)+')':''}.`;
+    ?`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew gana <strong>$${F(m.pc)}/mes</strong>. Inversi\u00f3n inicial de <strong>$${F(inv)}</strong> se recupera en <strong>${payback.toFixed(1)} meses</strong>. ${i.fm>0?'Filmmaker cuesta $'+F(m.fmCost)+'/mes pero libera a Creators del estudio.':'Creators graba '+m.days+' d\u00edas/mes.'} ${i.cm>0?'CM ($'+F(i.cm)+') cubre publicaci\u00f3n.':''} Margen: <strong>${m.margin.toFixed(0)}%</strong>. LTV por cliente: <strong>$${F(i.tk*6)}</strong> (6 meses).`
+    :`Con <strong>${i.cl} clientes a $${F(i.tk)}</strong>, cada crew ganar\u00eda solo <strong>$${F(m.pc)}/mes</strong>. Faltan <strong>$${F(i.mt-m.pc)}</strong> para la meta. ${m.be<50?'Necesitas '+m.be.toFixed(0)+' clientes':'Sube el ticket'} o reduce costos${i.fm>0?' (ej: quitar filmmaker ahorra $'+F(m.fmCost)+')':''}.`;
 
   $('fv-h').textContent=v
-    ?`$/hora: $${F(ph)} · Payback inversión: ${payback.toFixed(1)} meses · ROI año 1: ${Math.round((m.pc*12-inv/2)/(inv/2)*100)}% · Breakeven: ${m.be.toFixed(1)} clientes`
-    :`Breakeven: ${m.be>=50?'inalcanzable':m.be.toFixed(1)+' clientes'} · Opciones: subir ticket, más clientes, o quitar costos`;
+    ?`$/hora: $${F(ph)} \u00b7 Payback inversi\u00f3n: ${payback.toFixed(1)} meses \u00b7 ROI a\u00f1o 1: ${Math.round((m.pc*12-inv/2)/(inv/2)*100)}% \u00b7 Breakeven: ${m.be.toFixed(1)} clientes`
+    :`Breakeven: ${m.be>=50?'inalcanzable':m.be.toFixed(1)+' clientes'} \u00b7 Opciones: subir ticket, m\u00e1s clientes, o quitar costos`;
 }
 
 // PRESETS
